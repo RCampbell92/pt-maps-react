@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+  --primary-colour: #7e3e98;
+  --secondary-colour: #fcb818;
+  --primary-highlighted: #9d6cb1;
 }
 
 html,
@@ -12,4 +19,141 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+h1 {
+  font-size: 3vw;
+  margin-left: 5%;
+}
+
+h2 {
+  font-size: 2.5vw;
+}
+
+p {
+  font-size: 1.5vw;
+}
+
+select {
+  font-size: 2vw;
+  padding: 1vw 2vw;
+  margin-left: 2vw;
+  margin-right: auto;
+}
+
+option {
+  background-color: black;
+  font-size: 2vw;
+}
+
+button {
+  background-color: var(--primary-colour);
+  border-radius: 3px;
+  padding: 0.5vw 1vw;
+  margin: 1vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1vw;
+  gap: 5vw;
+  border-bottom: var(--secondary-colour) 1vw solid;
+}
+
+.nav-button {
+  font-size: 2.5vw;
+  padding: 1vw;
+  background-color: var(--primary-colour);
+  border-bottom: #fcb818 2px solid;
+  border-right: #fcb818 2px solid;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: var(--primary-highlighted);
+}
+
+.title {
+  color: var(--primary-colour);
+  font-size: 8vw;
+  text-align: center;
+  border-bottom: var(--secondary-colour) 0.5vw solid;
+}
+
+.page {
+  padding-left: 4vw;
+}
+
+.comparison {
+  display: flex;
+  justify-content: center;
+}
+
+.comparison h1 {
+  border-bottom: var(--primary-colour) 0.3vw solid;
+}
+
+.network {
+  width: 50%;
+}
+
+.comparison img {
+  margin: 5%;
+  max-width: 90%;
+}
+
+.explore-container {
+  position: relative;
+  border: var(--primary-colour) 1px solid;
+  padding: 150px;
+}
+
+.explore-btn {
+  width: fit-content;
+  font-size: 2vw;
+  background-color: var(--primary-colour);
+  border-radius: 3px;
+  padding: 1vw;
+  z-index: 10;
+}
+
+.explore-btn-focus {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+.explore-btn-n {
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+.explore-btn-s {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+
+.explore-btn-e {
+  position: absolute;
+  top: 40%;
+  right: 30%;
+}
+
+.explore-btn-w {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.explore-line {
+  position: absolute;
+  background-color: var(--primary-colour);
+  top: 0;
+  left: 38%;
+  width: 1%;
+  height: 45%;
 }
