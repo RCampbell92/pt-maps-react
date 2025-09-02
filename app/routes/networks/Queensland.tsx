@@ -1,19 +1,19 @@
 import React from "react";
 
-const Victoria = () => {
+const Queensland = () => {
   return (
     <div className="network">
-      <h1>Victoria</h1>
+      <h1>Queensland</h1>
       <div>
         <h2>Stats</h2>
-        <p>Population: 7,012,962</p>
+        <p>Population: 5,528,000</p>
         <p>Number of stations</p>
         <p>Max frequency</p>
         <p>Pricing</p>
       </div>
-      <img src="../network_maps/vic-train-map.png"></img>
+      <img src="../network_maps/brisbane-train-map.png"></img>
     </div>
   );
 };
 
-export default Victoria;
+export default Queensland;
