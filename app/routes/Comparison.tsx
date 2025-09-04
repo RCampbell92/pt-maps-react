@@ -10,6 +10,8 @@ import Tasmania from "./networks/Tasmania";
 import WesternAustralia from "./networks/WesternAustralia";
 import { Route, Routes } from "react-router";
 import { useState } from "react";
+import NullNetwork from "./networks/NullNetwork";
+import ImgEnlarge from "~/components/ImgEnlarge";
 
 const Comparison = () => {
   const [active1, setActive1] = useState("null");
@@ -18,15 +20,18 @@ const Comparison = () => {
   const [select1, setSelect1] = useState("null");
   const [select2, setSelect2] = useState("null");
 
-  let compare_string1 = "";
-  let compare_string2 = "";
-
   const handleSelectChange1 = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelect1(event.target?.value);
   };
 
   const handleSelectChange2 = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelect2(event.target?.value);
+  };
+
+  const [showImg, setShowImg] = useState(true);
+
+  const handleRemoveClick = () => {
+    setShowImg(false);
   };
 
   return (
@@ -67,6 +72,7 @@ const Comparison = () => {
         Compare
       </button>
       <div className="comparison">
+        {active1 === "null" && <NullNetwork />}
         {active1 === "vic" && <Victoria />}
         {active1 === "nsw" && <NSW />}
         {active1 === "act" && <ACT />}
@@ -76,6 +82,9 @@ const Comparison = () => {
         {active1 === "tas" && <Tasmania />}
         {active1 === "wa" && <WesternAustralia />}
 
+        <div className="divider"></div>
+
+        {active2 === "null" && <NullNetwork />}
         {active2 === "vic" && <Victoria />}
         {active2 === "nsw" && <NSW />}
         {active2 === "act" && <ACT />}
@@ -85,6 +94,8 @@ const Comparison = () => {
         {active2 === "tas" && <Tasmania />}
         {active2 === "wa" && <WesternAustralia />}
       </div>
+
+      {showImg && <ImgEnlarge onClick={handleRemoveClick} />}
     </div>
   );
 };

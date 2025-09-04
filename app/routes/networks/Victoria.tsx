@@ -6,7 +6,7 @@ const Victoria = () => {
       <h1>Victoria</h1>
       <div>
         <h2>Stats</h2>
-        <p>Population: 7,012,962</p>
+        <p>Population: 7,011,100</p>
         <p>Number of stations</p>
         <p>Max frequency</p>
         <p>Pricing</p>

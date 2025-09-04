@@ -6,7 +6,7 @@ const NorthernTerritory = () => {
       <h1>Northern Territory</h1>
       <div>
         <h2>Stats</h2>
-        <p>Population: ?</p>
+        <p>Population: 262,200</p>
         <p>Number of stations</p>
         <p>Max frequency</p>
         <p>Pricing</p>

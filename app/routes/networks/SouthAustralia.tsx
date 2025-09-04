@@ -6,7 +6,7 @@ const SouthAustralia = () => {
       <h1>South Australia</h1>
       <div>
         <h2>Stats</h2>
-        <p>Population: 1,815,485</p>
+        <p>Population: 1,891,700</p>
         <p>Number of stations</p>
         <p>Max frequency</p>
         <p>Pricing</p>

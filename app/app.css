@@ -24,10 +24,15 @@ body {
 h1 {
   font-size: 3vw;
   margin-left: 5%;
+  margin-right: 5%;
 }
 
 h2 {
   font-size: 2.5vw;
+}
+
+h3 {
+  font-size: 2vw;
 }
 
 p {
@@ -48,6 +53,7 @@ option {
 
 button {
   background-color: var(--primary-colour);
+  font-size: 2vw;
   border-radius: 3px;
   padding: 0.5vw 1vw;
   margin: 1vw;
@@ -99,9 +105,40 @@ button {
   width: 50%;
 }
 
+.divider {
+  border: var(--secondary-colour) 1px solid;
+  margin-right: 2vw;
+}
+
 .comparison img {
   margin: 5%;
   max-width: 90%;
+}
+
+.remove-element {
+  display: none;
+}
+
+.img-enlarge-container {
+  z-index: 19;
+  background-color: rgba(0.1, 0.1, 0.1, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(5px);
+}
+
+.img-enlarge {
+  z-index: 20;
+  display: block;
+  position: relative;
+  max-width: 90%;
+  margin-top: 60vh;
+  margin-bottom: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: white 10px solid;
 }
 
 .explore-container {

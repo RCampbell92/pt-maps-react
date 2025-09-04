@@ -6,7 +6,7 @@ const Queensland = () => {
       <h1>Queensland</h1>
       <div>
         <h2>Stats</h2>
-        <p>Population: 5,528,000</p>
+        <p>Population: 5,618,800</p>
         <p>Number of stations</p>
         <p>Max frequency</p>
         <p>Pricing</p>
