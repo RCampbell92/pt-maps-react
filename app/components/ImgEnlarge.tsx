@@ -2,19 +2,17 @@ import React from "react";
 
 interface Props {
   onClick: () => void;
+  src: string | undefined;
 }
 
-const ImgEnlarge = ({ onClick }: Props) => {
+const ImgEnlarge = ({ onClick, src }: Props) => {
   return (
     <div
       className="img-enlarge-container"
       id="img-enlarge-container"
       onClick={onClick}
     >
-      <img
-        src="../network_maps/vic-train-map.png"
-        className="img-enlarge"
-      ></img>
+      <img src={src} className="img-enlarge"></img>
     </div>
   );
 };

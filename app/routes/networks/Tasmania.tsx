@@ -1,6 +1,10 @@
 import React from "react";
 
-const Tasmania = () => {
+interface Props {
+  onClick: () => void;
+}
+
+const Tasmania = ({ onClick }: Props) => {
   return (
     <div className="network">
       <h1>Tasmania</h1>

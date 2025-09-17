@@ -1,6 +1,10 @@
 import React from "react";
 
-const ACT = () => {
+interface Props {
+  onClick: () => void;
+}
+
+const ACT = ({ onClick }: Props) => {
   return (
     <div className="network">
       <h1>Australian Capital Territory</h1>
@@ -11,7 +15,7 @@ const ACT = () => {
         <p>Max frequency</p>
         <p>Pricing</p>
       </div>
-      <img src="../network_maps/canberra-lr-map.png"></img>
+      <img src="../network_maps/canberra-lr-map.png" onClick={onClick}></img>
     </div>
   );
 };

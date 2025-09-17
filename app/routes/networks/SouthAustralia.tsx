@@ -1,6 +1,10 @@
 import React from "react";
 
-const SouthAustralia = () => {
+interface Props {
+  onClick: () => void;
+}
+
+const SouthAustralia = ({ onClick }: Props) => {
   return (
     <div className="network">
       <h1>South Australia</h1>
@@ -11,7 +15,7 @@ const SouthAustralia = () => {
         <p>Max frequency</p>
         <p>Pricing</p>
       </div>
-      <img src="../network_maps/adelaide-train-map.png"></img>
+      <img src="../network_maps/adelaide-train-map.png" onClick={onClick}></img>
     </div>
   );
 };

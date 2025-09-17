@@ -20,6 +20,14 @@ const Comparison = () => {
   const [select1, setSelect1] = useState("null");
   const [select2, setSelect2] = useState("null");
 
+  const [hoveredSrc, setHoveredSrc] = useState<string | undefined>(undefined);
+
+  // Create handler for hovering over img elements
+  const handleClickImage = (e: React.MouseEvent<HTMLImageElement>) => {
+    setHoveredSrc(e.currentTarget.src); // store the src path
+    console.log(e.target);
+  };
+
   const handleSelectChange1 = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelect1(event.target?.value);
   };
@@ -30,8 +38,9 @@ const Comparison = () => {
 
   const [showImg, setShowImg] = useState(true);
 
-  const handleRemoveClick = () => {
+  const handleShowImage = () => {
     setShowImg(false);
+    console.log(hoveredSrc);
   };
 
   return (
@@ -73,29 +82,47 @@ const Comparison = () => {
       </button>
       <div className="comparison">
         {active1 === "null" && <NullNetwork />}
-        {active1 === "vic" && <Victoria />}
-        {active1 === "nsw" && <NSW />}
-        {active1 === "act" && <ACT />}
-        {active1 === "nt" && <NorthernTerritory />}
-        {active1 === "qld" && <Queensland />}
-        {active1 === "sa" && <SouthAustralia />}
-        {active1 === "tas" && <Tasmania />}
-        {active1 === "wa" && <WesternAustralia />}
+        {active1 === "vic" && <Victoria onClick={() => setShowImg(true)} />}
+        {active1 === "nsw" && <NSW onClick={() => handleClickImage} />}
+        {active1 === "act" && <ACT onClick={() => setShowImg(true)} />}
+        {active1 === "nt" && (
+          <NorthernTerritory
+            onClick={() => handleClickImage}
+            onMouseMove={() => handleClickImage}
+          />
+        )}
+        {active1 === "qld" && <Queensland onClick={() => setShowImg(true)} />}
+        {active1 === "sa" && (
+          <SouthAustralia onClick={() => setShowImg(true)} />
+        )}
+        {active1 === "tas" && <Tasmania onClick={() => setShowImg(true)} />}
+        {active1 === "wa" && (
+          <WesternAustralia onClick={() => setShowImg(true)} />
+        )}
 
         <div className="divider"></div>
 
         {active2 === "null" && <NullNetwork />}
-        {active2 === "vic" && <Victoria />}
-        {active2 === "nsw" && <NSW />}
-        {active2 === "act" && <ACT />}
-        {active2 === "nt" && <NorthernTerritory />}
-        {active2 === "qld" && <Queensland />}
-        {active2 === "sa" && <SouthAustralia />}
-        {active2 === "tas" && <Tasmania />}
-        {active2 === "wa" && <WesternAustralia />}
+        {active2 === "vic" && <Victoria onClick={() => setShowImg(true)} />}
+        {active2 === "nsw" && <NSW onClick={handleClickImage} />}
+        {active2 === "act" && <ACT onClick={() => setShowImg(true)} />}
+        {active2 === "nt" && (
+          <NorthernTerritory
+            onClick={() => handleClickImage}
+            onMouseMove={() => handleClickImage}
+          />
+        )}
+        {active2 === "qld" && <Queensland onClick={() => setShowImg(true)} />}
+        {active2 === "sa" && (
+          <SouthAustralia onClick={() => setShowImg(true)} />
+        )}
+        {active2 === "tas" && <Tasmania onClick={() => setShowImg(true)} />}
+        {active2 === "wa" && (
+          <WesternAustralia onClick={() => setShowImg(true)} />
+        )}
       </div>
 
-      {showImg && <ImgEnlarge onClick={handleRemoveClick} />}
+      {showImg && <ImgEnlarge onClick={handleShowImage} src={hoveredSrc} />}
     </div>
   );
 };

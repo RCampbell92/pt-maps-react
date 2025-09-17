@@ -1,6 +1,10 @@
 import React from "react";
 
-const NSW = () => {
+interface Props {
+  onClick: (e: React.MouseEvent<HTMLImageElement>) => void;
+}
+
+const NSW = ({ onClick }: Props) => {
   return (
     <div className="network">
       <h1>New South Wales</h1>
@@ -11,7 +15,7 @@ const NSW = () => {
         <p>Max frequency</p>
         <p>Pricing</p>
       </div>
-      <img src="../network_maps/nsw-train-map.png"></img>
+      <img src="../network_maps/nsw-train-map.png" onClick={onClick}></img>
     </div>
   );
 };

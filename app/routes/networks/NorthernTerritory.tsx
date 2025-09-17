@@ -1,6 +1,11 @@
 import React from "react";
 
-const NorthernTerritory = () => {
+interface Props {
+  onClick: () => void;
+  onMouseMove: () => void;
+}
+
+const NorthernTerritory = ({ onClick, onMouseMove }: Props) => {
   return (
     <div className="network">
       <h1>Northern Territory</h1>
@@ -11,7 +16,11 @@ const NorthernTerritory = () => {
         <p>Max frequency</p>
         <p>Pricing</p>
       </div>
-      <img src="../network_maps/nsw-train-map.png"></img>
+      <img
+        src="../network_maps/nsw-train-map.png"
+        onClick={onClick}
+        onMouseMove={onMouseMove}
+      ></img>
     </div>
   );
 };
