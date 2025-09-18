@@ -15,7 +15,7 @@ const Victoria = ({ onClick }: Props) => {
         <p>Max frequency</p>
         <p>Pricing</p>
       </div>
-      <img src="../network_maps/vic-train-map.png" onClick={onClick}></img>
+      <img src="/network_maps/vic-train-map.png" onClick={onClick}></img>
     </div>
   );
 };

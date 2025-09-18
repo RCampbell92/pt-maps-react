@@ -39,6 +39,11 @@ p {
   font-size: 1.5vw;
 }
 
+a {
+  font-size: 1.5vw;
+  color: var(--primary-colour);
+}
+
 select {
   font-size: 2vw;
   padding: 1vw 2vw;
@@ -57,6 +62,10 @@ button {
   border-radius: 3px;
   padding: 0.5vw 1vw;
   margin: 1vw;
+}
+
+img {
+  margin: 2%;
 }
 
 .navbar {
@@ -102,7 +111,7 @@ button {
 }
 
 .network {
-  width: 50%;
+  width: 90%;
 }
 
 .divider {

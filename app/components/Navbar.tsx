@@ -6,7 +6,7 @@ const Navbar = () => {
   let navigate = useNavigate();
   return (
     <ul className="navbar">
-      <NavButton onClick={() => console.log("Browse")}>Browse</NavButton>
+      <NavButton onClick={() => navigate("./browse")}>Browse</NavButton>
       <NavButton onClick={() => navigate("./compare")}>Compare</NavButton>
       <NavButton onClick={() => navigate("./explore")}>Explore</NavButton>
       <NavButton onClick={() => console.log("About")}>About</NavButton>

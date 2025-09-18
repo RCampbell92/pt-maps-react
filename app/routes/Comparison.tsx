@@ -36,7 +36,7 @@ const Comparison = () => {
     setSelect2(event.target?.value);
   };
 
-  const [showImg, setShowImg] = useState(true);
+  const [showImg, setShowImg] = useState(false);
 
   const handleShowImage = () => {
     setShowImg(false);
@@ -86,10 +86,7 @@ const Comparison = () => {
         {active1 === "nsw" && <NSW onClick={() => handleClickImage} />}
         {active1 === "act" && <ACT onClick={() => setShowImg(true)} />}
         {active1 === "nt" && (
-          <NorthernTerritory
-            onClick={() => handleClickImage}
-            onMouseMove={() => handleClickImage}
-          />
+          <NorthernTerritory onClick={() => handleClickImage} />
         )}
         {active1 === "qld" && <Queensland onClick={() => setShowImg(true)} />}
         {active1 === "sa" && (
@@ -107,10 +104,7 @@ const Comparison = () => {
         {active2 === "nsw" && <NSW onClick={handleClickImage} />}
         {active2 === "act" && <ACT onClick={() => setShowImg(true)} />}
         {active2 === "nt" && (
-          <NorthernTerritory
-            onClick={() => handleClickImage}
-            onMouseMove={() => handleClickImage}
-          />
+          <NorthernTerritory onClick={() => handleClickImage} />
         )}
         {active2 === "qld" && <Queensland onClick={() => setShowImg(true)} />}
         {active2 === "sa" && (
