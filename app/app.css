@@ -56,6 +56,12 @@ option {
   font-size: 2vw;
 }
 
+input {
+  border: white 2px solid;
+  font-size: 1.5vw;
+  padding: 5px;
+}
+
 button {
   background-color: var(--primary-colour);
   font-size: 2vw;
@@ -153,11 +159,12 @@ img {
 
 .explore-container {
   position: relative;
+  height: 1000px;
   border: var(--primary-colour) 1px solid;
-  padding: 150px;
 }
 
 .explore-btn {
+  display: flex;
   width: fit-content;
   font-size: 2vw;
   background-color: var(--primary-colour);

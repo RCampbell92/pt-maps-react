@@ -9,7 +9,7 @@ const Navbar = () => {
       <NavButton onClick={() => navigate("./browse")}>Browse</NavButton>
       <NavButton onClick={() => navigate("./compare")}>Compare</NavButton>
       <NavButton onClick={() => navigate("./explore")}>Explore</NavButton>
-      <NavButton onClick={() => console.log("About")}>About</NavButton>
+      <NavButton onClick={() => navigate("./about")}>About</NavButton>
     </ul>
   );
 };

@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState, type FormEvent } from "react";
 import SubTitle from "~/components/SubTitle";
 
 const About = () => {
   return (
     <div>
-      <SubTitle>About</SubTitle>
-      <button>Southern Cross</button>
+      <SubTitle>About this website</SubTitle>
     </div>
   );
 };

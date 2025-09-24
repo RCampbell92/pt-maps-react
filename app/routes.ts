@@ -8,5 +8,6 @@ export default [
     ]),
     route("compare/*", "routes/Comparison.tsx"),
     route("explore", "routes/Explore.tsx"),
+    route("about", "routes/About.tsx"),
   ]),
 ] satisfies RouteConfig;
