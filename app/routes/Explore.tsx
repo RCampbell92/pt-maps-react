@@ -7,15 +7,11 @@ const Explore = () => {
     <div>
       <SubTitle>Explore</SubTitle>
       <div className="explore-container">
-        <button className="explore-btn-focus explore-btn">
-          Southern Cross
-        </button>
-        <ExploreBtn x={200} y={200}>
-          North Melbourne
-        </ExploreBtn>
-        <button className="explore-btn-s explore-btn">Flinders St</button>
-        <button className="explore-btn-e explore-btn">Flagstaff</button>
-        <button className="explore-btn-w explore-btn">Kensington</button>
+        <ExploreBtn position="c">Southern Cross</ExploreBtn>
+        <ExploreBtn position="tl">Kensington</ExploreBtn>
+        <ExploreBtn position="t">North Melbourne</ExploreBtn>
+        <ExploreBtn position="br">Flinders St</ExploreBtn>
+        <ExploreBtn position="tr">Flagstaff</ExploreBtn>
 
         <div className="explore-line"></div>
       </div>

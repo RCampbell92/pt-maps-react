@@ -159,12 +159,15 @@ img {
 
 .explore-container {
   position: relative;
-  height: 1000px;
+  width: 80vw;
+  height: 80vh;
   border: var(--primary-colour) 1px solid;
+  margin: 10vw;
 }
 
 .explore-btn {
   display: flex;
+  position: absolute;
   width: fit-content;
   font-size: 2vw;
   background-color: var(--primary-colour);
