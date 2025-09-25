@@ -1,0 +1,2 @@
+southern-cross north-melbourne:t flinders-street:br flagstaff:tr
+north-melbourne southern-cross:b south-kensington:l kensington:tl macaulay:t flagstaff:br
