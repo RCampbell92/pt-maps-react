@@ -3,9 +3,10 @@ import React, { useState, type ReactNode, useEffect } from "react";
 interface Props {
   children: ReactNode;
   position: string;
+  onClick: () => void;
 }
 
-const ExploreBtn = ({ children, position }: Props) => {
+const ExploreBtn = ({ children, position, onClick }: Props) => {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
@@ -27,7 +28,7 @@ const ExploreBtn = ({ children, position }: Props) => {
       setY(50);
     } else if (position == "r") {
       setX(100);
-      setY(0);
+      setY(50);
     } else if (position == "bl") {
       setX(0);
       setY(100);
@@ -48,7 +49,7 @@ const ExploreBtn = ({ children, position }: Props) => {
     translate: `calc(-50%) calc(-50%)`,
   };
   return (
-    <div className="explore-btn" style={dynamicStyle}>
+    <div onClick={onClick} className="explore-btn" style={dynamicStyle}>
       {children}
     </div>
   );

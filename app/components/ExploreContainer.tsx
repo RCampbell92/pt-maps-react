@@ -1,58 +1,51 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useLayoutEffect } from "react";
+import { createRoot } from "react-dom/client";
 import ExploreBtn from "~/components/ExploreBtn";
 import ExploreLine from "~/components/ExploreLine";
-import rawTextFile from "../../stations-vic.txt";
+import App from "~/root";
 
 interface Props {
-  station: string;
+  stationInfo: string;
+  onClick: () => void;
 }
 
-const ExploreContainer = ({ station }: Props) => {
-  const [fileContent, setFileContent] = useState("");
+const ExploreContainer = ({ stationInfo, onClick }: Props) => {
+  const [connectedStations, setConnectedStations] = useState([]);
 
-  useEffect(() => {
-    fetch(rawTextFile)
-      .then((response) => response.text())
-      .then((text) => setFileContent(text))
-      .catch((error) => console.error("Error reading file: ", error));
-  });
-  if (station == "southern-cross") {
-    return (
-      <div>
-        <p>{fileContent}</p>
-        <div className="explore-container">
-          <ExploreBtn position="c">Southern Cross</ExploreBtn>
-          <ExploreBtn position="t">North Melbourne</ExploreBtn>
-          <ExploreBtn position="br">Flinders St</ExploreBtn>
-          <ExploreBtn position="tr">Flagstaff</ExploreBtn>
+  const populateStations = (str: string) => {
+    console.log("Populating...");
+    const data = [];
+    const stations = str.split(" ");
+    for (let i = 1; i < stations.length; i++) {
+      data.push({
+        id: i,
+        name: stations[i].split(":")[0].replace("-", " "),
+        dir: stations[i].split(":")[1].trim(),
+      });
+    }
+    console.log(data[data.length - 1]);
+    return data;
+  };
 
-          <ExploreLine position={"t"} />
-          <ExploreLine position={"tr"} />
-          <ExploreLine position={"br"} />
-        </div>
+  const data = populateStations(stationInfo);
+
+  return (
+    <div>
+      <div className="explore-container">
+        <ExploreBtn onClick={onClick} position="c">
+          {stationInfo.split(" ")[0].replace("-", " ")}
+        </ExploreBtn>
+        {data.map((item, index) => (
+          <div key={index}>
+            <ExploreBtn onClick={onClick} position={item.dir}>
+              {item.name}
+            </ExploreBtn>
+            <ExploreLine position={item.dir} />
+          </div>
+        ))}
       </div>
-    );
-  } else if (station == "north-melbourne") {
-    return (
-      <div>
-        <p>{fileContent}</p>
-        <div className="explore-container">
-          <ExploreBtn position="c">North Melbourne</ExploreBtn>
-          <ExploreBtn position="b">Southern Cross</ExploreBtn>
-          <ExploreBtn position="l">South Kensington</ExploreBtn>
-          <ExploreBtn position="tl">Kensington</ExploreBtn>
-          <ExploreBtn position="t">Macaulay</ExploreBtn>
-          <ExploreBtn position="br">Flagstaff</ExploreBtn>
-
-          <ExploreLine position={"b"} />
-          <ExploreLine position={"l"} />
-          <ExploreLine position={"tl"} />
-          <ExploreLine position={"t"} />
-          <ExploreLine position={"br"} />
-        </div>
-      </div>
-    );
-  }
+    </div>
+  );
 };
 
 export default ExploreContainer;

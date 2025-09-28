@@ -28,7 +28,7 @@ const ExploreLine = ({ position }: Props) => {
       setRot(90);
     } else if (position == "r") {
       setX(75);
-      setY(0);
+      setY(50);
       setRot(90);
     } else if (position == "bl") {
       setX(25);
