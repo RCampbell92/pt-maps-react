@@ -19,6 +19,33 @@ Hoppers-Crossing Werribee:bl Williams-Landing:tr
 Werribee Hoppers-Crossing:tr
 Middle-Footscray West-Footscray:l Footscray:r
 West-Footscray Tottenham:l Middle-Footscray:r
-Tottenham Sunshine:l West-Footscray:r
-Sunshine Ardeer:l Albion:tl Tottenham:r
-Ardeer
+Tottenham Sunshine:tl West-Footscray:r
+Sunshine Ardeer:l Albion:tl Tottenham:br
+Ardeer Deer-Park:l Sunshine:r
+Deer-Park Tarneit:bl Caroline-Springs:tl Ardeer:r
+Tarneit Wyndham-Vale:bl Deer-Park:tr
+Wyndham-Vale Tarneit:tr
+Caroline-Springs Rockbank:tl Deer-Park:br
+Rockbank Cobblebank:tl Caroline-Springs:br
+Cobblebank Melton:tl Rockbank:br
+Melton Cobblebank:br
+Albion Ginifer:tl Sunshine:br
+Ginifer St-Albans:tl Albion:br
+St-Albans Keilor-Plains:t Ginifer:br
+Keilor-Plains Watergardens:tl St-Albans:b
+Watergardens Keilor-Plains:br
+Kensington Newmarket:t North-Melbourne:br
+Newmarket Ascot-Vale:tl Kensington:b
+Ascot-Vale Moonee-Ponds:t Newmarket:br
+Moonee-Ponds Essendon:t Ascot-Vale:b
+Essendon Glenbervie:t Moonee-Ponds:b
+Glenbervie Strathmore:tr Essendon:b 
+Strathmore Pascoe-Vale:t Glenbervie:bl
+Pascoe-Vale Oak-Park:t Strathmore:b 
+Oak-Park Glenroy:t Pascoe-Vale:b 
+Glenroy Jacana:t Oak-Park:b 
+Jacana Broadmeadows:t Glenroy:b 
+Broadmeadows Coolaroo:t Jacana:bl
+Coolaroo Roxburgh-Park:t Broadmeadows:b 
+Roxburgh-Park Craigieburn:t Coolaroo:b 
+Craigieburn Roxburgh-Park:b

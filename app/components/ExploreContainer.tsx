@@ -15,11 +15,12 @@ const ExploreContainer = ({ stationInfo }: Props) => {
     const data = [];
     const stations = str.split(" ");
     for (let i = 1; i < stations.length; i++) {
-      data.push({
-        id: i,
-        name: stations[i].split(":")[0].replace("-", " "),
-        dir: stations[i].split(":")[1].trim(),
-      });
+      if (stations[i].trim() != "")
+        data.push({
+          id: i,
+          name: stations[i].split(":")[0].replace("-", " "),
+          dir: stations[i].split(":")[1].trim(),
+        });
     }
     return data;
   };
