@@ -6,14 +6,12 @@ import App from "~/root";
 
 interface Props {
   stationInfo: string;
-  onClick: () => void;
 }
 
-const ExploreContainer = ({ stationInfo, onClick }: Props) => {
+const ExploreContainer = ({ stationInfo }: Props) => {
   const [connectedStations, setConnectedStations] = useState([]);
 
   const populateStations = (str: string) => {
-    console.log("Populating...");
     const data = [];
     const stations = str.split(" ");
     for (let i = 1; i < stations.length; i++) {
@@ -23,7 +21,6 @@ const ExploreContainer = ({ stationInfo, onClick }: Props) => {
         dir: stations[i].split(":")[1].trim(),
       });
     }
-    console.log(data[data.length - 1]);
     return data;
   };
 
@@ -31,15 +28,13 @@ const ExploreContainer = ({ stationInfo, onClick }: Props) => {
 
   return (
     <div>
-      <div className="explore-container">
-        <ExploreBtn onClick={onClick} position="c">
+      <div id="explore-container" className="explore-container">
+        <ExploreBtn position="c">
           {stationInfo.split(" ")[0].replace("-", " ")}
         </ExploreBtn>
-        {data.map((item, index) => (
-          <div key={index}>
-            <ExploreBtn onClick={onClick} position={item.dir}>
-              {item.name}
-            </ExploreBtn>
+        {data.map((item) => (
+          <div key={item.name}>
+            <ExploreBtn position={item.dir}>{item.name}</ExploreBtn>
             <ExploreLine position={item.dir} />
           </div>
         ))}

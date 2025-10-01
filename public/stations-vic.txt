@@ -5,6 +5,18 @@ Footscray Seddon:bl Middle-Footscray:l South-Kensington:r
 Seddon Yarraville:bl Footscray:tr
 Yarraville Spotswood:b Seddon:tr
 Spotswood Newport:b Yarraville:t
+Newport North-Williamstown:b Spotswood:t Seaholme:bl
+North-Williamstown Williamstown-Beach:br Newport:t
+Williamstown-Beach Williamstown:br North-Williamstown:tl
+Williamstown Williamstown-Beach:tl
+Seaholme Altona:l Newport:tr
+Altona Westona:l Seaholme:r
+Westona Laverton:l Altona:r
+Laverton Aircraft:bl Westona:r
+Aircraft Williams-Landing:bl Laverton:tr
+Williams-Landing Hoppers-Crossing:bl Aircraft:tr
+Hoppers-Crossing Werribee:bl Williams-Landing:tr
+Werribee Hoppers-Crossing:tr
 Middle-Footscray West-Footscray:l Footscray:r
 West-Footscray Tottenham:l Middle-Footscray:r
 Tottenham Sunshine:l West-Footscray:r

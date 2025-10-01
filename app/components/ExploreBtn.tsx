@@ -1,16 +1,25 @@
-import React, { useState, type ReactNode, useEffect } from "react";
+import React, {
+  useState,
+  type ReactNode,
+  useEffect,
+  type MouseEventHandler,
+} from "react";
+import { useNavigate, type NavigateFunction } from "react-router";
 
 interface Props {
   children: ReactNode;
   position: string;
-  onClick: () => void;
 }
 
-const ExploreBtn = ({ children, position, onClick }: Props) => {
+const ExploreBtn = ({ children, position }: Props) => {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
+  const [update, setUpdate] = useState(0);
+
+  let navigate = useNavigate();
 
   const setPosition = () => {
+    console.log(children?.toLocaleString() + " set");
     if (position == "tl") {
       setX(0);
       setY(0);
@@ -49,7 +58,16 @@ const ExploreBtn = ({ children, position, onClick }: Props) => {
     translate: `calc(-50%) calc(-50%)`,
   };
   return (
-    <div onClick={onClick} className="explore-btn" style={dynamicStyle}>
+    <div
+      onClick={() => {
+        setUpdate(update + 1);
+        navigate(
+          "/home/explore/" + children?.toLocaleString().replace(" ", "-")
+        );
+      }}
+      className="explore-btn"
+      style={dynamicStyle}
+    >
       {children}
     </div>
   );

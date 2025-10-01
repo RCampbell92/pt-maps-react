@@ -8,7 +8,9 @@ const Navbar = () => {
     <ul className="navbar">
       <NavButton onClick={() => navigate("./browse")}>Browse</NavButton>
       <NavButton onClick={() => navigate("./compare")}>Compare</NavButton>
-      <NavButton onClick={() => navigate("./explore")}>Explore</NavButton>
+      <NavButton onClick={() => navigate("./explore/Southern-Cross")}>
+        Explore
+      </NavButton>
       <NavButton onClick={() => navigate("./about")}>About</NavButton>
     </ul>
   );
