@@ -2,12 +2,14 @@ import React, { useEffect, useState, type ReactNode } from "react";
 
 interface Props {
   position: string;
+  col: string;
 }
 
-const ExploreLine = ({ position }: Props) => {
+const ExploreLine = ({ position, col }: Props) => {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const [rot, setRot] = useState(0);
+  const [colour, setColour] = useState("var(--primary-colour)");
 
   const setPosition = () => {
     if (position == "tl") {
@@ -45,9 +47,22 @@ const ExploreLine = ({ position }: Props) => {
     }
   };
 
-  useEffect(() => setPosition);
+  const setDisplay = () => {
+    if (col == "p") {
+      setColour("var(--primary-colour)");
+    }
+    if (col == "y") {
+      setColour("var(--secondary-colour)");
+    }
+  };
+
+  useEffect(() => {
+    setPosition;
+    setDisplay;
+  });
 
   const dynamicStyle = {
+    backgroundColor: colour,
     left: `calc(${x}%)`,
     top: `calc(${y}%)`,
     translate: `calc(-50%) calc(-50%)`,

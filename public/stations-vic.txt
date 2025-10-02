@@ -1,5 +1,5 @@
 Southern-Cross North-Melbourne:t Flinders-Street:br Flagstaff:tr
-North-Melbourne Southern-Cross:b South-Kensington:l Kensington:tl Macaulay:t Flagstaff:br
+North-Melbourne Southern-Cross:b South-Kensington:l Kensington:tl Macaulay:t:y Flagstaff:br
 South-Kensington Footscray:l North-Melbourne:r
 Footscray Seddon:bl Middle-Footscray:l South-Kensington:r
 Seddon Yarraville:bl Footscray:tr
@@ -49,3 +49,16 @@ Broadmeadows Coolaroo:t Jacana:bl
 Coolaroo Roxburgh-Park:t Broadmeadows:b 
 Roxburgh-Park Craigieburn:t Coolaroo:b 
 Craigieburn Roxburgh-Park:b
+Macaulay Flemington-Bridge:t North-Melbourne:b 
+Flemington-Bridge Royal-Park:tr Macaulay:b 
+Royal-Park Jewell:tr Flemington-Bridge:bl 
+Jewell Brunswick:t Royal-Park:bl 
+Brunswick Anstey:t Jewell:b 
+Anstey Moreland:t Brunswick:b 
+Moreland Coburg:t Anstey:b 
+Coburg Batman:t Moreland:b 
+Batman Merlynston:t Coburg:b 
+Merlynston Fawkner:t Batman:b 
+Fawkner Gowrie:t Merlynston:b 
+Gowrie Upfield:t Fawkner:b 
+Upfield Gowrie:b

@@ -9,9 +9,10 @@ import { useNavigate, type NavigateFunction } from "react-router";
 interface Props {
   children: ReactNode;
   position: string;
+  className?: string;
 }
 
-const ExploreBtn = ({ children, position }: Props) => {
+const ExploreBtn = ({ children, position, className }: Props) => {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const [update, setUpdate] = useState(0);
@@ -65,7 +66,7 @@ const ExploreBtn = ({ children, position }: Props) => {
           "/home/explore/" + children?.toLocaleString().replace(" ", "-")
         );
       }}
-      className="explore-btn"
+      className={"explore-btn " + className}
       style={dynamicStyle}
     >
       {children}
