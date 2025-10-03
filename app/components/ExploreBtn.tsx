@@ -20,7 +20,6 @@ const ExploreBtn = ({ children, position, className }: Props) => {
   let navigate = useNavigate();
 
   const setPosition = () => {
-    console.log(children?.toLocaleString() + " set");
     if (position == "tl") {
       setX(0);
       setY(0);
@@ -51,7 +50,7 @@ const ExploreBtn = ({ children, position, className }: Props) => {
     }
   };
 
-  useEffect(() => setPosition);
+  useEffect(() => setPosition());
 
   const dynamicStyle = {
     left: `calc(${x}%)`,

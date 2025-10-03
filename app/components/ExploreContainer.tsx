@@ -18,19 +18,20 @@ const ExploreContainer = ({ stationInfo }: Props) => {
       let stationButtonString = stations[i].trim();
       if (stationButtonString != "") {
         let stationButton = stationButtonString.split(":");
+        console.log(stationButton[2]);
         if (stationButton.length == 3) {
           data.push({
             id: i,
             name: stationButton[0].replace("-", " "),
             dir: stationButton[1].trim(),
-            colour: stationButton[2],
+            colours: stationButton[2].split(","),
           });
         } else if (stationButton.length == 2) {
           data.push({
             id: i,
             name: stationButton[0].replace("-", " "),
             dir: stationButton[1].trim(),
-            colour: "p",
+            colours: ["p"],
           });
         }
       }
@@ -49,7 +50,9 @@ const ExploreContainer = ({ stationInfo }: Props) => {
         {data.map((item) => (
           <div key={item.name}>
             <ExploreBtn position={item.dir}>{item.name}</ExploreBtn>
-            <ExploreLine position={item.dir} col={item.colour} />
+            {item.colours.map((colour) => (
+              <ExploreLine position={item.dir} col={colour} lineNo={0} />
+            ))}
           </div>
         ))}
       </div>

@@ -3,9 +3,10 @@ import React, { useEffect, useState, type ReactNode } from "react";
 interface Props {
   position: string;
   col: string;
+  lineNo: number;
 }
 
-const ExploreLine = ({ position, col }: Props) => {
+const ExploreLine = ({ position, col, lineNo }: Props) => {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const [rot, setRot] = useState(0);
@@ -50,15 +51,18 @@ const ExploreLine = ({ position, col }: Props) => {
   const setDisplay = () => {
     if (col == "p") {
       setColour("var(--primary-colour)");
-    }
-    if (col == "y") {
+    } else if (col == "y") {
       setColour("var(--secondary-colour)");
+    } else if (col == "g") {
+      setColour("green");
+    } else if (col == "r") {
+      setColour("red");
     }
   };
 
   useEffect(() => {
-    setPosition;
-    setDisplay;
+    setPosition();
+    setDisplay();
   });
 
   const dynamicStyle = {
