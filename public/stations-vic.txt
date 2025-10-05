@@ -1,7 +1,11 @@
-Southern-Cross North-Melbourne:t:g,y Flinders-Street:br Flagstaff:tr
-North-Melbourne Southern-Cross:b:g South-Kensington:l:g Kensington:tl:y Macaulay:t:y Flagstaff:br
-South-Kensington Footscray:l:g North-Melbourne:r:g
-Footscray Seddon:bl:g Middle-Footscray:l South-Kensington:r:g
+Southern-Cross North-Melbourne:t:v,g,y Flinders-Street:br:c,b,v,r,g,y Flagstaff:tr:b,c,r,v,y,g
+Flagstaff Southern-Cross:bl:c,b,v,r,g,y North-Melbourne:tl:y Melbourne-Central:r:b,c,r,v,y,g
+Melbourne-Central Flagstaff:l Parliament:br
+Parliament Melbourne-Central:tl Flinders-Street:bl
+Flinders-Street Parliament:tr Southern-Cross:tl 
+North-Melbourne Southern-Cross:b:v,y,g South-Kensington:l:v,g,y Kensington:tl:y Macaulay:t:y Flagstaff:br:y
+South-Kensington Footscray:l:v,g,y North-Melbourne:r:v,y,g
+Footscray Seddon:bl:g Middle-Footscray:l:y,v South-Kensington:r:v,y,g
 Seddon Yarraville:bl:g Footscray:tr:g
 Yarraville Spotswood:b:g Seddon:tr:g
 Spotswood Newport:b:g Yarraville:t:g
@@ -17,10 +21,10 @@ Aircraft Williams-Landing:bl:g Laverton:tr:g
 Williams-Landing Hoppers-Crossing:bl:g Aircraft:tr:g
 Hoppers-Crossing Werribee:bl:g Williams-Landing:tr:g
 Werribee Hoppers-Crossing:tr:g
-Middle-Footscray West-Footscray:l Footscray:r
-West-Footscray Tottenham:l Middle-Footscray:r
-Tottenham Sunshine:tl West-Footscray:r
-Sunshine Ardeer:l Albion:tl Tottenham:br
+Middle-Footscray West-Footscray:l:y,v Footscray:r:v,y
+West-Footscray Tottenham:l:y,v Middle-Footscray:r:v,y
+Tottenham Sunshine:tl:y,v West-Footscray:r:v,y
+Sunshine Ardeer:l Albion:tl:y Tottenham:br:v,y
 Ardeer Deer-Park:l Sunshine:r
 Deer-Park Tarneit:bl Caroline-Springs:tl Ardeer:r
 Tarneit Wyndham-Vale:bl Deer-Park:tr
@@ -29,10 +33,10 @@ Caroline-Springs Rockbank:tl Deer-Park:br
 Rockbank Cobblebank:tl Caroline-Springs:br
 Cobblebank Melton:tl Rockbank:br
 Melton Cobblebank:br
-Albion Ginifer:tl Sunshine:br
-Ginifer St-Albans:tl Albion:br
-St-Albans Keilor-Plains:t Ginifer:br
-Keilor-Plains Watergardens:tl St-Albans:b
+Albion Ginifer:tl:y Sunshine:br:y
+Ginifer St-Albans:tl:y Albion:br:y
+St-Albans Keilor-Plains:t:y Ginifer:br:y
+Keilor-Plains Watergardens:tl:y St-Albans:b:y
 Watergardens Keilor-Plains:br
 Kensington Newmarket:t North-Melbourne:br
 Newmarket Ascot-Vale:tl Kensington:b
