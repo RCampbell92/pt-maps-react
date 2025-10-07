@@ -5,11 +5,12 @@ import rawTextFile from "../../stations-vic.txt";
 import { useParams } from "react-router";
 
 const Explore = () => {
-  const { stationID } = useParams();
+  const { currentStation } = useParams(); // Var for routes.ts
   const targetRef = useRef<HTMLDivElement>(null);
 
   const [fileContent, setFileContent] = useState("");
-  const [station, setStation] = useState("Southern-Cross");
+  const [stationInfo, setStationInfo] = useState("Southern-Cross");
+  const [hasImg, setHasImg] = useState(false);
 
   const searchStation = (searchTerm: string | undefined, lines: string[]) => {
     let stationData = "";
@@ -32,31 +33,59 @@ const Explore = () => {
       .then((text) => {
         setFileContent(text);
         let fileLines: string[] = text.split("\n");
-        setStation(searchStation(stationID, fileLines)); // search for current station in file lines and return the line that starts with this station
+        setStationInfo(searchStation(currentStation, fileLines)); // search for current station in file lines and return the line that starts with this station
         console.log(
-          stationID +
+          currentStation +
             ", " +
             fileLines[1] +
             ", " +
-            searchStation(stationID, fileLines)
+            searchStation(currentStation, fileLines)
         );
       })
       .catch((error) => console.error("Error reading file: ", error));
-  }, [stationID]);
 
-  useEffect(() => {
-    console.log(stationID);
+    // Auto scroll to map
     if (targetRef.current) {
       targetRef.current.scrollIntoView({ behavior: "auto" });
     }
-  }, [stationID]);
+
+    // Check if there's an image file
+    async function checkImg() {
+      try {
+        const response = await fetch(
+          `/stations/images/vic/${currentStation?.toLowerCase()}.jpg`,
+          { method: "HEAD" }
+        );
+        if (response.ok) {
+          setHasImg(true);
+        } else {
+          setHasImg(false);
+        }
+      } catch (error) {
+        console.error("Error checking image existence", error);
+        setHasImg(false);
+      }
+    }
+
+    checkImg();
+  }, [currentStation]);
 
   return (
-    <div id="explore" key={stationID}>
+    <div id="explore" key={currentStation}>
       <div ref={targetRef}>
         <SubTitle>Explore</SubTitle>
       </div>
-      <ExploreContainer stationInfo={station} />
+      <div className="explore-outer-container">
+        <div>
+          <h1>{stationInfo.split(" ")[0].replace("-", " ")}</h1>
+          {hasImg && (
+            <img
+              src={`/stations/images/vic/${currentStation?.toLowerCase()}.jpg`}
+            ></img>
+          )}
+        </div>
+        <ExploreContainer stationInfo={stationInfo} />
+      </div>
     </div>
   );
 };

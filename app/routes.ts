@@ -7,7 +7,7 @@ export default [
       route("victoria", "routes/networks/Victoria.tsx"),
     ]),
     route("compare/*", "routes/Comparison.tsx"),
-    route("explore/:stationID", "routes/Explore.tsx"),
+    route("explore/:currentStation", "routes/Explore.tsx"),
     route("about", "routes/About.tsx"),
   ]),
 ] satisfies RouteConfig;
