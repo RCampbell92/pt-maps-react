@@ -3,9 +3,14 @@ Flagstaff Southern-Cross:bl:b,r,c,y North-Melbourne:tl:y Melbourne-Central:r:r,b
 Melbourne-Central Flagstaff:l:b,r,c,y Parliament:br:r,b,y,c
 Parliament Melbourne-Central:tl:b,r,c,y Flinders-Street:bl:r,b,y,c Jolimont-MCG:br:r
 Flinders-Street Parliament:tr:b,r,c,y Southern-Cross:tl:r,b,y,c,v,g Jolimont-MCG:r:r Richmond:br:c,b,g,v,p
+Arden Footscray:bl Parkville:r 
+Parkville Arden:l State-Library:b  
+State-Library Parkville:t Town-Hall:b 
+Town-Hall State-Library:t Anzac:b 
+Anzac Town-Hall:t Hawksburn:r 
 North-Melbourne Southern-Cross:b:v,y,g South-Kensington:l:v,g,y Kensington:tl:y,v Macaulay:t:y Flagstaff:br:y
 South-Kensington Footscray:l:v,g,y North-Melbourne:r:v,y,g
-Footscray Seddon:bl:g Middle-Footscray:l:y,v South-Kensington:r:v,y,g
+Footscray Seddon:bl:g Middle-Footscray:l:y,v South-Kensington:r:v,y,g Arden:tr 
 Seddon Yarraville:bl:g Footscray:tr:g
 Yarraville Spotswood:b:g Seddon:tr:g
 Spotswood Newport:b:g Yarraville:t:g
@@ -106,3 +111,52 @@ Eltham Montmorency:l:r Diamond-Creek:t:r
 Diamond-Creek Eltham:b:r Wattle-Glen:tr:r 
 Wattle-Glen Diamond-Creek:bl:r Hurstbridge:t:r 
 Hurstbridge Wattle-Glen:b:r
+Richmond Flinders-Street:tl:c,g,b,p,v East-Richmond:r:b South-Yarra:b:g,c,p,v 
+East-Richmond Richmond:l:b Burnley:r:b 
+Burnley East-Richmond:l:b Hawthorn:tr:b Heyington:br:b 
+Hawthorn Burnley:bl:b Glenferrie:r:b 
+Glenferrie Hawthorn:l:b Auburn:r:b 
+Auburn Glenferrie:l:b Camberwell:br:b 
+Camberwell Auburn:tl:b Canterbury:r:b Riversdale:br:b 
+Canterbury Camberwell:l:b Chatham:r:b 
+Chatham Canterbury:l:b Union:r:b 
+Union Chatham:l:b Box-Hill:tr:b 
+Box-Hill Union:bl:b Laburnum:r:b 
+Laburnum Box-Hill:l:b Blackburn:r:b 
+Blackburn Laburnum:l:b Nunawading:r:b 
+Nunawading Blackburn:l:b Mitcham:r:b 
+Mitcham Nunawading:l:b Heatherdale:r:b 
+Heatherdale Mitcham:l:b Ringwood:tr:b 
+Ringwood Heatherdale:bl:b Ringwood-East:tr:b Heathmont:br:b 
+Ringwood-East Ringwood:bl:b Croydon:tr:b 
+Croydon Ringwood-East:bl:b Mooroolbark:tr:b 
+Mooroolbark Croydon:bl:b Lilydale:tr:b 
+Lilydale Mooroolbark:bl:b 
+Heathmont Ringwood:tl:b Bayswater:br:b 
+Bayswater Heathmont:tl:b Boronia:br:b 
+Boronia Bayswater:tl:b Ferntree-Gully:b:b 
+Ferntree-Gully Boronia:t:b Upper-Ferntree-Gully:br:b 
+Upper-Ferntree-Gully Ferntree-Gully:tl:b Upwey:br:b 
+Upwey Upper-Ferntree-Gully:tl:b Tecoma:br:b 
+Tecoma Upwey:tl:b Belgrave:r:b 
+Belgrave Tecoma:l:b 
+Riversdale Camberwell:tl:b Willison:b:b 
+Willison Riversdale:t:b Hartwell:b:b 
+Hartwell Willison:t:b Burwood:b:b 
+Burwood Hartwell:t:b Ashburton:b:b 
+Ashburton Burwood:t:b Alamein:b:b 
+Alamein Ashburton:t:b 
+Heyington Burnley:tl:b Kooyong:br:b 
+Kooyong Heyington:tl:b Tooronga:br:b 
+Tooronga Kooyong:tl:b Gardiner:br:b 
+Gardiner Tooronga:tl:b Glen-Iris:br:b 
+Glen-Iris Gardiner:tl:b Darling:b:b 
+Darling Glen-Iris:t:b East-Malvern:br:b 
+East-Malvern Darling:tl:b Holmesglen:r:b 
+Holmesglen East-Malvern:l:b Jordanville:r:b 
+Jordanville Holmesglen:l:b Mount-Waverley:r:b 
+Mount-Waverley Jordanville:l:b Syndal:r:b 
+Syndal Mount-Waverley:l:b Glen-Waverley:r:b 
+Glen-Waverley Syndal:l:b 
+South-Yarra Richmond:t:v,g,c,p Hawksburn:br:v,c,g 
+Hawksburn South-Yarra:tl:v,g,c Anzac:l
