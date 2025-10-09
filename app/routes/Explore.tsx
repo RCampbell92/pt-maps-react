@@ -76,7 +76,7 @@ const Explore = () => {
         <SubTitle>Explore</SubTitle>
       </div>
       <div className="explore-outer-container">
-        <div>
+        <div className="explore-station-info">
           <h1>{stationInfo.split(" ")[0].replace("-", " ")}</h1>
           {hasImg && (
             <img

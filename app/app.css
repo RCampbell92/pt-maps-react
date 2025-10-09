@@ -165,8 +165,12 @@ img {
   display: flex;
 }
 
+.explore-station-info {
+  width: 30%;
+}
+
 .explore-outer-container img {
-  max-width: 40vw;
+  max-width: 90%;
 }
 
 .explore-container {

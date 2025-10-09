@@ -158,5 +158,29 @@ Jordanville Holmesglen:l:b Mount-Waverley:r:b
 Mount-Waverley Jordanville:l:b Syndal:r:b 
 Syndal Mount-Waverley:l:b Glen-Waverley:r:b 
 Glen-Waverley Syndal:l:b 
-South-Yarra Richmond:t:v,g,c,p Hawksburn:br:v,c,g 
-Hawksburn South-Yarra:tl:v,g,c Anzac:l
+South-Yarra Richmond:t:c,g,v,p Hawksburn:br:c,v,g Prahran:b:p 
+Hawksburn South-Yarra:tl:c,g,v Anzac:l Toorak:br:c,v,g
+Toorak Hawksburn:tl:c,g,v Armadale:br:c,v,g
+Armadale Toorak:tl:c,g,v Malvern:br:c,v,g
+Malvern Armadale:tl:c,g,v Caulfield:br:c,v,g
+Caulfield Malvern:tl:c,g,v Carnegie:br:c,v Glen-Huntly:b:g 
+Carnegie Caulfield:tl:v,c Murrumbeena:br:c,v 
+Murrumbeena Carnegie:tl:v,c Hughesdale:br:c,v 
+Hughesdale Murrumbeena:tl:v,c Oakleigh:br:c,v 
+Oakleigh Hughesdale:tl:v,c Huntingdale:br:c,v 
+Huntingdale Oakleigh:tl:v,c Clayton:br:c,v 
+Clayton Huntingdale:tl:v,c Westall:br:c,v 
+Westall Clayton:tl:v,c Springvale:br:c,v 
+Springvale Westall:tl:v,c Sandown-Park:br:c,v 
+Sandown-Park Springvale:tl:v,c Noble-Park:br:c,v 
+Noble-Park Sandown-Park:tl:v,c Yarraman:br:c,v 
+Yarraman Noble-Park:tl:v,c Dandenong:br:c,v 
+Dandenong Yarraman:tl:v,c Hallam:br:c,v Lynbrook:b:c 
+Hallam Dandenong:tl:v,c Narre-Warren:br:c,v 
+Narre-Warren Hallam:tl:v,c Berwick:br:c,v 
+Berwick Narre-Warren:tl:v,c Beaconsfield:br:c,v 
+Beaconsfield Berwick:tl:v,c Officer:br:c,v 
+Officer Beaconsfield:tl:v,c Cardinia-Road:r:c,v 
+Cardinia-Road Officer:l:v,c Pakenham:r:c,v 
+Pakenham Cardinia-Road:l:v,c East-Pakenham:r:c,v 
+East-Pakenham Pakenham:l:v,c 
