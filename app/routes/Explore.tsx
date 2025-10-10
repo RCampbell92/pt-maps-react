@@ -16,9 +16,11 @@ const Explore = () => {
     let stationData = "";
     if (searchTerm) {
       lines.forEach((line) => {
-        if (line.trim().split(" ")[0] == searchTerm) {
-          console.log("Line found: " + searchTerm);
-          stationData = line;
+        if (!line.trim().startsWith("//")) {
+          if (line.trim().split(" ")[0] == searchTerm) {
+            console.log("Line found: " + searchTerm);
+            stationData = line;
+          }
         }
       });
     }

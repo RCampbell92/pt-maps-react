@@ -1,13 +1,18 @@
+// City Loop
 Southern-Cross North-Melbourne:t:v,g,y Flinders-Street:br:c,b,v,r,g,y Flagstaff:tr:r,b,y,c
 Flagstaff Southern-Cross:bl:b,r,c,y North-Melbourne:tl:y Melbourne-Central:r:r,b,y,c
 Melbourne-Central Flagstaff:l:b,r,c,y Parliament:br:r,b,y,c
 Parliament Melbourne-Central:tl:b,r,c,y Flinders-Street:bl:r,b,y,c Jolimont-MCG:br:r
 Flinders-Street Parliament:tr:b,r,c,y Southern-Cross:tl:r,b,y,c,v,g Jolimont-MCG:r:r Richmond:br:c,b,g,v,p
+
+// Metro Tunnel
 Arden Footscray:bl Parkville:r 
 Parkville Arden:l State-Library:b  
 State-Library Parkville:t Town-Hall:b 
 Town-Hall State-Library:t Anzac:b 
 Anzac Town-Hall:t Hawksburn:r 
+
+// West
 North-Melbourne Southern-Cross:b:v,y,g South-Kensington:l:v,g,y Kensington:tl:y,v Macaulay:t:y Flagstaff:br:y
 South-Kensington Footscray:l:v,g,y North-Melbourne:r:v,y,g
 Footscray Seddon:bl:g Middle-Footscray:l:y,v South-Kensington:r:v,y,g Arden:tr 
@@ -43,6 +48,8 @@ Ginifer St-Albans:tl:y,v Albion:br:v,y
 St-Albans Keilor-Plains:t:y,v Ginifer:br:v,y
 Keilor-Plains Watergardens:tl:y,v St-Albans:b:v,y
 Watergardens Keilor-Plains:br:v,y
+
+// North
 Kensington Newmarket:t:y,v North-Melbourne:br:v,y
 Newmarket Ascot-Vale:tl:y,v Kensington:b:v,y
 Ascot-Vale Moonee-Ponds:t:y,v Newmarket:br:v,y
@@ -111,6 +118,8 @@ Eltham Montmorency:l:r Diamond-Creek:t:r
 Diamond-Creek Eltham:b:r Wattle-Glen:tr:r 
 Wattle-Glen Diamond-Creek:bl:r Hurstbridge:t:r 
 Hurstbridge Wattle-Glen:b:r
+
+// South East 
 Richmond Flinders-Street:tl:c,g,b,p,v East-Richmond:r:b South-Yarra:b:g,c,p,v 
 East-Richmond Richmond:l:b Burnley:r:b 
 Burnley East-Richmond:l:b Hawthorn:tr:b Heyington:br:b 
@@ -184,3 +193,39 @@ Officer Beaconsfield:tl:v,c Cardinia-Road:r:c,v
 Cardinia-Road Officer:l:v,c Pakenham:r:c,v 
 Pakenham Cardinia-Road:l:v,c East-Pakenham:r:c,v 
 East-Pakenham Pakenham:l:v,c 
+Lynbrook Dandenong:t:c Merinda-Park:br:c 
+Merinda-Park Lynbrook:tl:c Cranbourne:br:c 
+Cranbourne Merinda-Park:tl:c 
+Glen-Huntly Caulfield:t:g Ormond:b:g 
+Ormond Glen-Huntly:t:g McKinnon:b:g 
+McKinnon Ormond:t:g Bentleigh:b:g 
+Bentleigh McKinnon:t:g Patterson:b:g 
+Patterson Bentleigh:t:g Moorabbin:b:g 
+Moorabbin Patterson:t:g Highett:br:g 
+Highett Moorabbin:tl:g Southland:br:g 
+Southland Highett:tl:g Cheltenham:br:g 
+Cheltenham Southland:tl:g Mentone:br:g 
+Mentone Cheltenham:tl:g Parkdale:br:g 
+Parkdale Mentone:tl:g Mordialloc:br:g 
+Mordialloc Parkdale:tl:g Aspendale:br:g 
+Aspendale Mordialloc:tl:g Edithvale:b:g 
+Edithvale Aspendale:t:g Chelsea:b:g 
+Chelsea Edithvale:t:g Bonbeach:b:g 
+Bonbeach Chelsea:t:g Carrum:b:g 
+Carrum Bonbeach:t:g Seaford:b:g 
+Seaford Carrum:t:g Kananook:br:g 
+Kananook Seaford:tl:g Frankston:bl:g 
+Frankston Kananook:tr:g Leawarra:br:g 
+Leawarra Frankston:tl:g Baxter:b:g 
+Baxter Leawarra:t:g 
+Prahran South-Yarra:t:p Windsor:br:p 
+Windsor Prahran:tl:p Balaclava:b:p 
+Balaclava Windsor:t:p Ripponlea:br:p 
+Ripponlea Balaclava:tl:p Elsternwick:br:p 
+Elsternwick Ripponlea:tl:p Gardenvale:b:p 
+Gardenvale Elsternwick:t:p North-Brighton:b:p 
+North-Brighton Gardenvale:t:p Middle-Brighton:bl:p 
+Middle-Brighton North-Brighton:tr:p Brighton-Beach:bl:p 
+Brighton-Beach Middle-Brighton:tr:p Hampton:br:p 
+Hampton Brighton-Beach:tl:p Sandringham:b:p 
+Sandringham Hampton:t:p 
