@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import ExploreContainer from "~/components/ExploreContainer";
 import SubTitle from "~/components/SubTitle";
-import rawTextFile from "../../stations-vic.txt";
 import { useParams } from "react-router";
 
 const Explore = () => {
@@ -11,6 +10,7 @@ const Explore = () => {
   const [fileContent, setFileContent] = useState("");
   const [stationInfo, setStationInfo] = useState("Southern-Cross");
   const [hasImg, setHasImg] = useState(false);
+  const [stations, setStations] = useState([""]);
 
   const searchStation = (searchTerm: string | undefined, lines: string[]) => {
     let stationData = "";
@@ -30,7 +30,7 @@ const Explore = () => {
   };
 
   useEffect(() => {
-    fetch("/stations-vic.txt?nocache=" + Date.now()) // get current version of stations.txt
+    fetch("/stations-vic.sl?nocache=" + Date.now()) // get current version of stations.txt
       .then((response) => response.text()) // get text from file
       .then((text) => {
         setFileContent(text);
@@ -72,11 +72,38 @@ const Explore = () => {
     checkImg();
   }, [currentStation]);
 
+  useEffect(() => {
+    fetch("/stations-vic.sl?nocache=" + Date.now()) // get current version of stations.txt
+      .then((response) => response.text()) // get text from file
+      .then((text) => {
+        setFileContent(text);
+        let fileLines: string[] = text.split("\n");
+        let fileStations: string[] = [];
+        // loop through all lines in file and get first word in every line
+        fileLines.forEach((line) => {
+          fileStations.push(line.split(" ")[0]);
+        });
+        // set stations array to fileLines array
+        setStations(fileStations);
+      })
+      .catch((error) => console.error("Error reading file: ", error));
+  }, []);
+
   return (
     <div id="explore" key={currentStation}>
       <div ref={targetRef}>
         <SubTitle>Explore</SubTitle>
       </div>
+      <input
+        type="text"
+        list="stations-list"
+        placeholder="Jump to station..."
+      ></input>
+      <datalist id="stations-list">
+        {stations.map((station) => (
+          <option value={station}></option>
+        ))}
+      </datalist>
       <div className="explore-outer-container">
         <div className="explore-station-info">
           <h1>{stationInfo.split(" ")[0].replace("-", " ")}</h1>

@@ -119,7 +119,7 @@ Diamond-Creek Eltham:b:r Wattle-Glen:tr:r
 Wattle-Glen Diamond-Creek:bl:r Hurstbridge:t:r 
 Hurstbridge Wattle-Glen:b:r
 
-// South East 
+// East 
 Richmond Flinders-Street:tl:c,g,b,p,v East-Richmond:r:b South-Yarra:b:g,c,p,v 
 East-Richmond Richmond:l:b Burnley:r:b 
 Burnley East-Richmond:l:b Hawthorn:tr:b Heyington:br:b 
@@ -167,6 +167,8 @@ Jordanville Holmesglen:l:b Mount-Waverley:r:b
 Mount-Waverley Jordanville:l:b Syndal:r:b 
 Syndal Mount-Waverley:l:b Glen-Waverley:r:b 
 Glen-Waverley Syndal:l:b 
+
+// South East
 South-Yarra Richmond:t:c,g,v,p Hawksburn:br:c,v,g Prahran:b:p 
 Hawksburn South-Yarra:tl:c,g,v Anzac:l Toorak:br:c,v,g
 Toorak Hawksburn:tl:c,g,v Armadale:br:c,v,g
