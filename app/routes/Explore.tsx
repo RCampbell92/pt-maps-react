@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import ExploreContainer from "~/components/ExploreContainer";
 import SubTitle from "~/components/SubTitle";
 import { useParams } from "react-router";
+import { useNavigate, type NavigateFunction } from "react-router";
 
 const Explore = () => {
   const { currentStation } = useParams(); // Var for routes.ts
@@ -11,6 +12,10 @@ const Explore = () => {
   const [stationInfo, setStationInfo] = useState("Southern-Cross");
   const [hasImg, setHasImg] = useState(false);
   const [stations, setStations] = useState([""]);
+  const [jumpStation, setJumpStation] = useState("");
+  const [update, setUpdate] = useState(0);
+
+  let navigate = useNavigate();
 
   const searchStation = (searchTerm: string | undefined, lines: string[]) => {
     let stationData = "";
@@ -81,7 +86,9 @@ const Explore = () => {
         let fileStations: string[] = [];
         // loop through all lines in file and get first word in every line
         fileLines.forEach((line) => {
-          fileStations.push(line.split(" ")[0]);
+          let stationName = line.split(" ")[0];
+          if (stationName.trim() != "//" && stationName.trim() != "")
+            fileStations.push(stationName);
         });
         // set stations array to fileLines array
         setStations(fileStations);
@@ -98,12 +105,25 @@ const Explore = () => {
         type="text"
         list="stations-list"
         placeholder="Jump to station..."
+        value={jumpStation}
+        onChange={(e) => {
+          setJumpStation(e.target.value);
+        }}
       ></input>
       <datalist id="stations-list">
         {stations.map((station) => (
           <option value={station}></option>
         ))}
       </datalist>
+      <button
+        onClick={() => {
+          console.log(jumpStation);
+          navigate("/home/explore/" + jumpStation.replace(" ", "-"));
+        }}
+      >
+        Go
+      </button>
+
       <div className="explore-outer-container">
         <div className="explore-station-info">
           <h1>{stationInfo.split(" ")[0].replace("-", " ")}</h1>
