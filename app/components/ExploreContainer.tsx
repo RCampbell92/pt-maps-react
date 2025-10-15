@@ -17,10 +17,12 @@ const ExploreContainer = ({ stationInfo }: Props) => {
     const data = [];
     const stations = str.split(" ");
 
+    // loop through all stations except current one
     for (let i = 1; i < stations.length; i++) {
-      // loop through all stations except current one
       let stationButtonString = stations[i].trim(); // trim the station name for searchability and readability
-      if (stationButtonString != "") {
+      if (stationButtonString.startsWith("time:")) {
+        console.log("time");
+      } else if (stationButtonString != "") {
         // check if station name is an actual name
         let stationButton = stationButtonString.split(":"); // create var for station button data
         console.log(stationButton[2]); //

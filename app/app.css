@@ -170,16 +170,24 @@ img {
   border: white 10px solid;
 }
 
+.explore {
+  margin-bottom: 30vh;
+}
+
 .explore-outer-container {
   display: flex;
 }
 
 .explore-station-info {
   width: 30%;
+  border: white 3px solid;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .explore-outer-container img {
   max-width: 90%;
+  max-height: 50%;
 }
 
 .explore-container {

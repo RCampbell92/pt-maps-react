@@ -1,9 +1,9 @@
 // City Loop
-Southern-Cross North-Melbourne:t:v,g,y Flinders-Street:br:c,b,v,r,g,y Flagstaff:tr:r,b,y,c
-Flagstaff Southern-Cross:bl:b,r,c,y North-Melbourne:tl:y Melbourne-Central:r:r,b,y,c
-Melbourne-Central Flagstaff:l:b,r,c,y Parliament:br:r,b,y,c
-Parliament Melbourne-Central:tl:b,r,c,y Flinders-Street:bl:r,b,y,c Jolimont-MCG:br:r
-Flinders-Street Parliament:tr:b,r,c,y Southern-Cross:tl:r,b,y,c,v,g Jolimont-MCG:r:r Richmond:br:c,b,g,v,p
+Southern-Cross time:0 North-Melbourne:t:v,g,y Flinders-Street:br:c,b,v,r,g,y Flagstaff:tr:r,b,y,c
+Flagstaff time:2 Southern-Cross:bl:b,r,c,y North-Melbourne:tl:y Melbourne-Central:r:r,b,y,c
+Melbourne-Central time:3 Flagstaff:l:b,r,c,y Parliament:br:r,b,y,c
+Parliament time:5 Melbourne-Central:tl:b,r,c,y Flinders-Street:bl:r,b,y,c Jolimont-MCG:br:r
+Flinders-Street time:4 Parliament:tr:b,r,c,y Southern-Cross:tl:r,b,y,c,v,g Jolimont-MCG:r:r Richmond:br:c,b,g,v,p
 
 // Metro Tunnel
 Arden Footscray:bl Parkville:r 

@@ -13,6 +13,7 @@ const Explore = () => {
   const [hasImg, setHasImg] = useState(false);
   const [stations, setStations] = useState([""]);
   const [jumpStation, setJumpStation] = useState("");
+  const [timeToCBD, setTimeToCBD] = useState(3);
   const [update, setUpdate] = useState(0);
 
   let navigate = useNavigate();
@@ -41,13 +42,7 @@ const Explore = () => {
         setFileContent(text);
         let fileLines: string[] = text.split("\n");
         setStationInfo(searchStation(currentStation, fileLines)); // search for current station in file lines and return the line that starts with this station
-        console.log(
-          currentStation +
-            ", " +
-            fileLines[1] +
-            ", " +
-            searchStation(currentStation, fileLines)
-        );
+        console.log(stationInfo);
       })
       .catch((error) => console.error("Error reading file: ", error));
 
@@ -78,6 +73,12 @@ const Explore = () => {
   }, [currentStation]);
 
   useEffect(() => {
+    if (stationInfo.split(" ")[1].startsWith("time:")) {
+      setTimeToCBD(parseInt(stationInfo.split(" ")[1].split(":")[1]));
+    }
+  }, [stationInfo]);
+
+  useEffect(() => {
     fetch("/stations-vic.sl?nocache=" + Date.now()) // get current version of stations.txt
       .then((response) => response.text()) // get text from file
       .then((text) => {
@@ -86,7 +87,7 @@ const Explore = () => {
         let fileStations: string[] = [];
         // loop through all lines in file and get first word in every line
         fileLines.forEach((line) => {
-          let stationName = line.split(" ")[0];
+          let stationName = line.split(" ")[0].replace("-", " ");
           if (stationName.trim() != "//" && stationName.trim() != "")
             fileStations.push(stationName);
         });
@@ -97,32 +98,34 @@ const Explore = () => {
   }, []);
 
   return (
-    <div id="explore" key={currentStation}>
-      <div ref={targetRef}>
+    <div className="page explore" id="explore" key={currentStation}>
+      <div>
         <SubTitle>Explore</SubTitle>
       </div>
-      <input
-        type="text"
-        list="stations-list"
-        placeholder="Jump to station..."
-        value={jumpStation}
-        onChange={(e) => {
-          setJumpStation(e.target.value);
-        }}
-      ></input>
-      <datalist id="stations-list">
-        {stations.map((station) => (
-          <option value={station}></option>
-        ))}
-      </datalist>
-      <button
-        onClick={() => {
-          console.log(jumpStation);
-          navigate("/home/explore/" + jumpStation.replace(" ", "-"));
-        }}
-      >
-        Go
-      </button>
+      <div ref={targetRef}>
+        <input
+          type="text"
+          list="stations-list"
+          placeholder="Jump to station..."
+          value={jumpStation}
+          onChange={(e) => {
+            setJumpStation(e.target.value);
+          }}
+        ></input>
+        <datalist id="stations-list">
+          {stations.map((station) => (
+            <option value={station}></option>
+          ))}
+        </datalist>
+        <button
+          onClick={() => {
+            console.log(jumpStation);
+            navigate("/home/explore/" + jumpStation.replace(" ", "-"));
+          }}
+        >
+          Go
+        </button>
+      </div>
 
       <div className="explore-outer-container">
         <div className="explore-station-info">
@@ -132,6 +135,7 @@ const Explore = () => {
               src={`/stations/images/vic/${currentStation?.toLowerCase()}.jpg`}
             ></img>
           )}
+          <p>Time to Southern Cross: {timeToCBD} min</p>
         </div>
         <ExploreContainer stationInfo={stationInfo} />
       </div>

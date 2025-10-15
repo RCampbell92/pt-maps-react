@@ -14,7 +14,7 @@ const Browse = () => {
   const [active, setActive] = useState("null");
 
   return (
-    <div>
+    <div className="page">
       <h1>Browse</h1>
       <h3>Select from multiple networks across Australia</h3>
       <button onClick={() => setActive("act")}>ACT</button>
