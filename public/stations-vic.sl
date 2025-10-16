@@ -13,71 +13,73 @@ Town-Hall State-Library:t Anzac:b
 Anzac Town-Hall:t Hawksburn:r 
 
 // West
-North-Melbourne Southern-Cross:b:v,y,g South-Kensington:l:v,g,y Kensington:tl:y,v Macaulay:t:y Flagstaff:br:y
-South-Kensington Footscray:l:v,g,y North-Melbourne:r:v,y,g
-Footscray Seddon:bl:g Middle-Footscray:l:y,v South-Kensington:r:v,y,g Arden:tr 
-Seddon Yarraville:bl:g Footscray:tr:g
-Yarraville Spotswood:b:g Seddon:tr:g
-Spotswood Newport:b:g Yarraville:t:g
-Newport North-Williamstown:b:g Spotswood:t:g Seaholme:bl:g
-North-Williamstown Williamstown-Beach:br:g Newport:t:g
-Williamstown-Beach Williamstown:br:g North-Williamstown:tl:g
-Williamstown Williamstown-Beach:tl:g
-Seaholme Altona:l:g Newport:tr:g
-Altona Westona:l:g Seaholme:r:g
-Westona Laverton:l:g Altona:r:g
-Laverton Aircraft:bl:g Westona:r:g
-Aircraft Williams-Landing:bl:g Laverton:tr:g
-Williams-Landing Hoppers-Crossing:bl:g Aircraft:tr:g
-Hoppers-Crossing Werribee:bl:g Williams-Landing:tr:g
-Werribee Hoppers-Crossing:tr:g
-Middle-Footscray West-Footscray:l:y,v Footscray:r:v,y
-West-Footscray Tottenham:l:y,v Middle-Footscray:r:v,y
-Tottenham Sunshine:tl:y,v West-Footscray:r:v,y
-Sunshine Ardeer:l Albion:tl:y,v Tottenham:br:v,y
-Ardeer Deer-Park:l Sunshine:r
-Deer-Park Tarneit:bl Caroline-Springs:tl Ardeer:r
-Tarneit Wyndham-Vale:bl Deer-Park:tr
-Wyndham-Vale Tarneit:tr
-Caroline-Springs Rockbank:tl Deer-Park:br
-Rockbank Cobblebank:tl Caroline-Springs:br
-Cobblebank Melton:tl Rockbank:br
-Melton Cobblebank:br
-Albion Ginifer:tl:y,v Sunshine:br:v,y
-Ginifer St-Albans:tl:y,v Albion:br:v,y
-St-Albans Keilor-Plains:t:y,v Ginifer:br:v,y
-Keilor-Plains Watergardens:tl:y,v St-Albans:b:v,y
-Watergardens Keilor-Plains:br:v,y
+North-Melbourne time:3 Southern-Cross:b:v,y,g South-Kensington:l:v,g,y Kensington:tl:y,v Macaulay:t:y Flagstaff:br:y
+South-Kensington time:6 Footscray:l:v,g,y North-Melbourne:r:v,y,g
+Footscray time:10 Seddon:bl:g Middle-Footscray:l:y,v South-Kensington:r:v,y,g Arden:tr 
+Seddon time:11 Yarraville:bl:g Footscray:tr:g
+Yarraville time:13 Spotswood:b:g Seddon:tr:g
+Spotswood time:15 Newport:b:g Yarraville:t:g
+Newport time:17 North-Williamstown:b:g Spotswood:t:g Seaholme:bl:g
+North-Williamstown time:20 Williamstown-Beach:br:g Newport:t:g
+Williamstown-Beach time:22 Williamstown:br:g North-Williamstown:tl:g
+Williamstown time:24 Williamstown-Beach:tl:g
+Seaholme time:26 Altona:l:g Newport:tr:g
+Altona time:28 Westona:l:g Seaholme:r:g
+Westona time:30 Laverton:l:g Altona:r:g
+Laverton time:24 Aircraft:bl:g Westona:r:g
+Aircraft time:26 Williams-Landing:bl:g Laverton:tr:g
+Williams-Landing time:29 Hoppers-Crossing:bl:g Aircraft:tr:g
+Hoppers-Crossing time:32 Werribee:bl:g Williams-Landing:tr:g
+Werribee time:35 Hoppers-Crossing:tr:g
+Middle-Footscray time:18 West-Footscray:l:y,v Footscray:r:v,y
+West-Footscray time:20 Tottenham:l:y,v Middle-Footscray:r:v,y
+Tottenham time:22 Sunshine:tl:y,v West-Footscray:r:v,y
+Sunshine time:16 Ardeer:l Albion:tl:y,v Tottenham:br:v,y
+Ardeer time:21 Deer-Park:l Sunshine:r
+Deer-Park time:23 Tarneit:bl Caroline-Springs:tl Ardeer:r
+Tarneit time:30 Wyndham-Vale:bl Deer-Park:tr
+Wyndham-Vale time:35 Tarneit:tr
+Caroline-Springs time:28 Rockbank:tl Deer-Park:br
+Rockbank time:32 Cobblebank:tl Caroline-Springs:br
+Cobblebank time:36 Melton:tl Rockbank:br
+Melton time:39 Cobblebank:br
+Albion time:18 Ginifer:tl:y,v Sunshine:br:v,y
+Ginifer time:22 St-Albans:tl:y,v Albion:br:v,y
+St-Albans time:24 Keilor-Plains:t:y,v Ginifer:br:v,y
+Keilor-Plains time:26 Watergardens:tl:y,v St-Albans:b:v,y
+Watergardens time:30 Keilor-Plains:br:v,y
 
 // North
-Kensington Newmarket:t:y,v North-Melbourne:br:v,y
-Newmarket Ascot-Vale:tl:y,v Kensington:b:v,y
-Ascot-Vale Moonee-Ponds:t:y,v Newmarket:br:v,y
-Moonee-Ponds Essendon:t:y,v Ascot-Vale:b:v,y
-Essendon Glenbervie:t:y,v Moonee-Ponds:b:v,y
-Glenbervie Strathmore:tr:y,v Essendon:b:v,y
-Strathmore Pascoe-Vale:t:y,v Glenbervie:bl:v,y
-Pascoe-Vale Oak-Park:t:y,v Strathmore:b:v,y
-Oak-Park Glenroy:t:y,v Pascoe-Vale:b:v,y
-Glenroy Jacana:t:y,v Oak-Park:b:v,y
-Jacana Broadmeadows:t:y,v Glenroy:b:v,y 
-Broadmeadows Coolaroo:t:y,v Jacana:bl:v,y
-Coolaroo Roxburgh-Park:t:y,v Broadmeadows:b:v,y
-Roxburgh-Park Craigieburn:t:y,v Coolaroo:b:v,y
-Craigieburn Roxburgh-Park:b:v,y
-Macaulay Flemington-Bridge:t:y North-Melbourne:b:y
-Flemington-Bridge Royal-Park:tr:y Macaulay:b:y 
-Royal-Park Jewell:tr:y Flemington-Bridge:bl:y 
-Jewell Brunswick:t:y Royal-Park:bl:y 
-Brunswick Anstey:t:y Jewell:b:y 
-Anstey Moreland:t:y Brunswick:b:y 
-Moreland Coburg:t:y Anstey:b:y 
-Coburg Batman:t:y Moreland:b:y 
-Batman Merlynston:t:y Coburg:b:y 
-Merlynston Fawkner:t:y Batman:b:y 
-Fawkner Gowrie:t:y Merlynston:b:y 
-Gowrie Upfield:t:y Fawkner:b:y 
-Upfield Gowrie:b:y
+Kensington time:14 Newmarket:t:y,v North-Melbourne:br:v,y
+Newmarket time:15 Showgrounds:l:y Ascot-Vale:tl:y,v Kensington:b:v,y
+Showgrounds time:33 Newmarket:r:y Flemington-Racecourse:bl:y 
+Flemington-Racecourse time:31 Showgrounds:tr:y 
+Ascot-Vale time:17 Moonee-Ponds:t:y,v Newmarket:br:v,y
+Moonee-Ponds time:19 Essendon:t:y,v Ascot-Vale:b:v,y
+Essendon time:21 Glenbervie:t:y,v Moonee-Ponds:b:v,y
+Glenbervie time:24 Strathmore:tr:y,v Essendon:b:v,y
+Strathmore time:25 Pascoe-Vale:t:y,v Glenbervie:bl:v,y
+Pascoe-Vale time:27 Oak-Park:t:y,v Strathmore:b:v,y
+Oak-Park time:29 Glenroy:t:y,v Pascoe-Vale:b:v,y
+Glenroy time:32 Jacana:t:y,v Oak-Park:b:v,y
+Jacana time:33 Broadmeadows:t:y,v Glenroy:b:v,y 
+Broadmeadows time:35 Coolaroo:t:y,v Jacana:bl:v,y
+Coolaroo time:39 Roxburgh-Park:t:y,v Broadmeadows:b:v,y
+Roxburgh-Park time:42 Craigieburn:t:y,v Coolaroo:b:v,y
+Craigieburn time:45 Roxburgh-Park:b:v,y
+Macaulay time:15 Flemington-Bridge:t:y North-Melbourne:b:y
+Flemington-Bridge time:16 Royal-Park:tr:y Macaulay:b:y 
+Royal-Park time:18 Jewell:tr:y Flemington-Bridge:bl:y 
+Jewell time:20 Brunswick:t:y Royal-Park:bl:y 
+Brunswick time:22 Anstey:t:y Jewell:b:y 
+Anstey time:24 Moreland:t:y Brunswick:b:y 
+Moreland time:25 Coburg:t:y Anstey:b:y 
+Coburg time:27 Batman:t:y Moreland:b:y 
+Batman time:30 Merlynston:t:y Coburg:b:y 
+Merlynston time:31 Fawkner:t:y Batman:b:y 
+Fawkner time:33 Gowrie:t:y Merlynston:b:y 
+Gowrie time:35 Upfield:t:y Fawkner:b:y 
+Upfield time:39 Gowrie:b:y
 Jolimont-MCG Parliament:tl:r Flinders-Street:l:r West-Richmond:tr:r 
 West-Richmond Jolimont-MCG:bl:r North-Richmond:t:r 
 North-Richmond West-Richmond:b:r Collingwood:t:r 
