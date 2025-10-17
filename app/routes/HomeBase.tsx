@@ -4,13 +4,16 @@ import Navbar from "~/components/Navbar";
 import Title from "~/components/Title";
 
 const HomeBase = () => {
-  return (
-    <div>
-      <Title />
-      <Navbar />
-      <Outlet />
-    </div>
-  );
+    return (
+        <div>
+            <div className="header">
+                <Title />
+                <Navbar />
+            </div>
+
+            <Outlet />
+        </div>
+    );
 };
 
 export default HomeBase;

@@ -106,7 +106,7 @@ const Explore = () => {
             <div>
                 <SubTitle>Explore</SubTitle>
             </div>
-            <div ref={targetRef}>
+            <div className="station-jump" ref={targetRef}>
                 <input
                     type="text"
                     list="stations-list"
@@ -142,7 +142,9 @@ const Explore = () => {
                         ></img>
                     )}
                     {timeToCBD >= 0 && (
-                        <p>Time to Southern Cross: {timeToCBD} min</p>
+                        <p>
+                            Time to Southern Cross (by 8:30am): {timeToCBD} min
+                        </p>
                     )}
                 </div>
                 <ExploreContainer stationInfo={stationInfo} />

@@ -1,258 +1,281 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans:
-    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans:
+        "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 :root {
-  --primary-colour: #7e3e98;
-  --secondary-colour: #fcb818;
-  --primary-highlighted: #9d6cb1;
+    --primary-colour: #7e3e98;
+    --secondary-colour: #d8b31b;
+    --primary-highlighted: #9d6cb1;
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+    @apply bg-white dark:bg-gray-950;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
 }
 
 h1 {
-  font-size: 3vw;
-  margin-left: 5%;
-  margin-right: 5%;
+    font-size: 3vw;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 h2 {
-  font-size: 2.5vw;
+    font-size: 2.5vw;
 }
 
 h3 {
-  font-size: 2vw;
+    font-size: 2vw;
 }
 
 p {
-  font-size: 1.5vw;
+    font-size: 1.5vw;
+    font-weight: 300;
 }
 
 a {
-  font-size: 1.5vw;
-  color: var(--primary-colour);
+    font-size: 1.5vw;
+    color: var(--primary-colour);
 }
 
 select {
-  font-size: 2vw;
-  padding: 1vw 2vw;
-  margin-left: 2vw;
-  margin-right: auto;
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    margin-left: 2vw;
+    margin-right: auto;
 }
 
 option {
-  background-color: black;
-  font-size: 2vw;
+    background-color: black;
+    font-size: 2vw;
 }
 
 input {
-  border: white 2px solid;
-  font-size: 1.5vw;
-  padding: 5px;
+    border: white 2px solid;
+    font-size: 1.5vw;
+    padding: 5px;
+}
+
+input[type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 datalist {
-  left: 0px;
+    left: 0px;
 }
 
 option {
-  font-size: 1.5vw;
-  padding: 5px;
+    font-size: 1.5vw;
+    padding: 5px;
 }
 
 button {
-  background-color: var(--primary-colour);
-  font-size: 2vw;
-  border-radius: 3px;
-  padding: 0.5vw 1vw;
-  margin: 1vw;
+    background-color: var(--primary-colour);
+    font-size: 2vw;
+    border-radius: 3px;
+    padding: 0.5vw 1vw;
+    margin: 1vw;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-highlighted);
 }
 
 img {
-  margin: 2%;
+    margin: 2%;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  padding: 1vw;
-  gap: 5vw;
-  border-bottom: var(--secondary-colour) 1vw solid;
-}
-
-.nav-button {
-  font-size: 2.5vw;
-  padding: 1vw;
-  background-color: var(--primary-colour);
-  border-bottom: #fcb818 2px solid;
-  border-right: #fcb818 2px solid;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.nav-button:hover {
-  background-color: var(--primary-highlighted);
+.header {
+    border-bottom: var(--secondary-colour) 0.5vw solid;
+    display: flex;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .title {
-  color: var(--primary-colour);
-  font-size: 8vw;
-  text-align: center;
-  border-bottom: var(--secondary-colour) 0.5vw solid;
+    color: white;
+    font-size: 8vw;
+    text-align: center;
+    width: 40%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    align-items: end;
+    padding: 1vw;
+    gap: 2vw;
+}
+
+.nav-button {
+    font-size: 2.5vw;
+    font-weight: 500;
+    max-height: 60%;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: var(--primary-colour);
 }
 
 .subtitle {
-  font-size: 4vw;
+    font-size: 4vw;
+    font-weight: 500;
 }
 
 .page {
-  padding-left: 4vw;
+    padding-left: 4vw;
 }
 
 .comparison {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .comparison h1 {
-  border-bottom: var(--primary-colour) 0.3vw solid;
+    border-bottom: var(--primary-colour) 0.3vw solid;
 }
 
 .network {
-  width: 90%;
+    width: 90%;
 }
 
 .divider {
-  border: var(--secondary-colour) 1px solid;
-  margin-right: 2vw;
+    border: var(--secondary-colour) 1px solid;
+    margin-right: 2vw;
 }
 
 .comparison img {
-  margin: 5%;
-  max-width: 90%;
-  cursor: pointer;
+    margin: 5%;
+    max-width: 90%;
+    cursor: pointer;
 }
 
 .remove-element {
-  display: none;
+    display: none;
 }
 
 .img-enlarge-container {
-  z-index: 19;
-  background-color: rgba(0.1, 0.1, 0.1, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  backdrop-filter: blur(5px);
+    z-index: 19;
+    background-color: rgba(0.1, 0.1, 0.1, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(5px);
 }
 
 .img-enlarge {
-  z-index: 20;
-  display: block;
-  position: relative;
-  max-width: 90%;
-  margin-top: 60vh;
-  margin-bottom: 60vh;
-  margin-left: auto;
-  margin-right: auto;
-  border: white 10px solid;
+    z-index: 20;
+    display: block;
+    position: relative;
+    max-width: 90%;
+    margin-top: 60vh;
+    margin-bottom: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: white 10px solid;
 }
 
 .explore {
-  margin-bottom: 30vh;
+    margin-bottom: 30vh;
 }
 
 .explore-outer-container {
-  display: flex;
+    display: flex;
+}
+
+.station-jump {
+    padding-left: 2%;
 }
 
 .explore-station-info {
-  width: 30%;
-  border: white 3px solid;
-  padding-left: 2%;
-  padding-right: 2%;
+    width: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .explore-outer-container img {
-  max-width: 90%;
-  max-height: 50%;
+    max-width: 90%;
+    max-height: 50%;
 }
 
 .explore-container {
-  position: relative;
-  width: 60vh;
-  height: 60vh;
-  margin-top: 10vh;
-  margin-left: 10vw;
-  margin-bottom: 10vh;
+    position: relative;
+    width: 60vh;
+    height: 60vh;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-bottom: 10vh;
 }
 
 .explore-btn {
-  display: flex;
-  position: absolute;
-  width: fit-content;
-  cursor: pointer;
-  max-width: 10vw;
-  font-size: 1.5vw;
-  background-color: var(--primary-colour);
-  color: white;
-  border-radius: 3px;
-  padding: 1vw;
-  z-index: 10;
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    cursor: pointer;
+    max-width: 10vw;
+    font-size: 1.5vw;
+    background-color: var(--primary-colour);
+    color: white;
+    border-radius: 3px;
+    padding: 1vw;
+    z-index: 10;
 }
 
 .explore-btn:hover {
-  background-color: var(--primary-highlighted);
+    background-color: var(--primary-highlighted);
 }
 
 .explore-btn-focus {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  border: white 3px solid;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    border: white 3px solid;
 }
 
 .explore-btn-n {
-  position: absolute;
-  top: 0;
-  left: 30%;
+    position: absolute;
+    top: 0;
+    left: 30%;
 }
 
 .explore-btn-s {
-  position: absolute;
-  bottom: 0;
-  left: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
 }
 
 .explore-btn-e {
-  position: absolute;
-  top: 40%;
-  right: 30%;
+    position: absolute;
+    top: 40%;
+    right: 30%;
 }
 
 .explore-btn-w {
-  position: absolute;
-  top: 40%;
-  left: 10%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
 }
 
 .explore-line {
-  position: absolute;
-  background-color: var(--primary-colour);
-  top: 0;
-  left: 38%;
-  width: 1%;
-  height: 60%;
+    position: absolute;
+    background-color: var(--primary-colour);
+    top: 0;
+    left: 38%;
+    width: 1%;
+    height: 60%;
 }
