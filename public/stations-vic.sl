@@ -80,37 +80,39 @@ Merlynston time:31 Fawkner:t:y Batman:b:y
 Fawkner time:33 Gowrie:t:y Merlynston:b:y 
 Gowrie time:35 Upfield:t:y Fawkner:b:y 
 Upfield time:39 Gowrie:b:y
-Jolimont-MCG Parliament:tl:r Flinders-Street:l:r West-Richmond:tr:r 
-West-Richmond Jolimont-MCG:bl:r North-Richmond:t:r 
-North-Richmond West-Richmond:b:r Collingwood:t:r 
-Collingwood North-Richmond:b:r Victoria-Park:t:r 
-Victoria-Park Collingwood:b:r Clifton-Hill:t:r 
-Clifton-Hill Victoria-Park:b:r Rushall:tl:r Westgarth:t:r 
-Rushall Clifton-Hill:br:r Merri:t:r 
-Merri Rushall:b:r Northcote:t:r 
-Northcote Merri:b:r Croxton:t:r 
-Croxton Northcote:b:r Thornbury:t:r 
-Thornbury Croxton:b:r Preston:t:r 
-Preston Thornbury:b:r Regent:t:r 
-Regent Preston:b:r Reservoir:t:r 
-Reservoir Regent:b:r Ruthven:t:r 
-Ruthven Reservoir:b:r Keon-Park:t:r 
-Keon-Park Ruthven:b:r Thomastown:t:r 
-Thomastown Keon-Park:b:r Lalor:t:r 
-Lalor Thomastown:b:r Epping:tr:r 
-Epping Lalor:bl:r South-Morang:r:r 
-South-Morang Epping:l:r Middle-Gorge:tr:r 
-Middle-Gorge South-Morang:bl:r Hawkstowe:t:r 
-Hawkstowe Middle-Gorge:b:r Mernda:t:r 
-Mernda Hawkstowe:b:r 
-Westgarth Clifton-Hill:b:r Dennis:tr:r 
-Dennis Westgarth:bl:r Fairfield:r:r 
-Fairfield Dennis:l:r Alphington:r:r 
-Alphington Fairfield:l:r Darebin:tr:r 
-Darebin Alphington:bl:r Ivanhoe:tr:r 
-Ivanhoe Darebin:bl:r Eaglemont:tr:r 
-Eaglemont Ivanhoe:bl:r Heidelberg:tr:r 
-Heidelberg Eaglemont:bl:r Rosanna:t:r 
+Jolimont-MCG time:8 Parliament:tl:r Flinders-Street:l:r West-Richmond:tr:r 
+West-Richmond time:10 Jolimont-MCG:bl:r North-Richmond:t:r 
+North-Richmond time:11 West-Richmond:b:r Collingwood:t:r 
+Collingwood time:13 North-Richmond:b:r Victoria-Park:t:r 
+Victoria-Park time:14 Collingwood:b:r Clifton-Hill:t:r 
+Clifton-Hill time:16 Victoria-Park:b:r Rushall:tl:r Westgarth:t:r 
+Rushall time:19 Clifton-Hill:br:r Merri:t:r 
+Merri time:20 Rushall:b:r Northcote:t:r 
+Northcote time:22 Merri:b:r Croxton:t:r 
+Croxton time:24 Northcote:b:r Thornbury:t:r 
+Thornbury time:26 Croxton:b:r Bell:t:r 
+Bell time:27 Thornbury:b:r Preston:t:r 
+Preston time:29 Bell:b:r Regent:t:r 
+Regent time:32 Preston:b:r Reservoir:t:r 
+Reservoir time:35 Regent:b:r Ruthven:t:r 
+Ruthven time:36 Reservoir:b:r Keon-Park:t:r 
+Keon-Park time:39 Ruthven:b:r Thomastown:t:r 
+Thomastown time:41 Keon-Park:b:r Lalor:t:r 
+Lalor time:43 Thomastown:b:r Epping:tr:r 
+Epping time:46 Lalor:bl:r South-Morang:r:r 
+South-Morang time:50 Epping:l:r Middle-Gorge:tr:r 
+Middle-Gorge time:52 South-Morang:bl:r Hawkstowe:t:r 
+Hawkstowe time:55 Middle-Gorge:b:r Mernda:t:r 
+Mernda time:58 Hawkstowe:b:r 
+Westgarth time:19 Clifton-Hill:b:r Dennis:tr:r 
+Dennis time:20 Westgarth:bl:r Fairfield:r:r 
+Fairfield time:22 Dennis:l:r Alphington:r:r 
+Alphington time:24 Fairfield:l:r Darebin:tr:r 
+Darebin time:26 Alphington:bl:r Ivanhoe:tr:r 
+Ivanhoe time:27 Darebin:bl:r Eaglemont:tr:r 
+Eaglemont time:29 Ivanhoe:bl:r Heidelberg:tr:r 
+Heidelberg time:31 Eaglemont:bl:r Rosanna:t:r 
+//Bus replacements from Hurstbridge to Rosanna for now
 Rosanna Heidelberg:b:r Macleod:t:r
 Macleod Rosanna:b:r Watsonia:tr:r 
 Watsonia Macleod:bl:r Greensborough:tr:r 
@@ -122,53 +124,54 @@ Wattle-Glen Diamond-Creek:bl:r Hurstbridge:t:r
 Hurstbridge Wattle-Glen:b:r
 
 // East 
-Richmond Flinders-Street:tl:c,g,b,p,v East-Richmond:r:b South-Yarra:b:g,c,p,v 
-East-Richmond Richmond:l:b Burnley:r:b 
-Burnley East-Richmond:l:b Hawthorn:tr:b Heyington:br:b 
-Hawthorn Burnley:bl:b Glenferrie:r:b 
-Glenferrie Hawthorn:l:b Auburn:r:b 
-Auburn Glenferrie:l:b Camberwell:br:b 
-Camberwell Auburn:tl:b Canterbury:r:b Riversdale:br:b 
-Canterbury Camberwell:l:b Chatham:r:b 
-Chatham Canterbury:l:b Union:r:b 
-Union Chatham:l:b Box-Hill:tr:b 
-Box-Hill Union:bl:b Laburnum:r:b 
-Laburnum Box-Hill:l:b Blackburn:r:b 
-Blackburn Laburnum:l:b Nunawading:r:b 
-Nunawading Blackburn:l:b Mitcham:r:b 
-Mitcham Nunawading:l:b Heatherdale:r:b 
-Heatherdale Mitcham:l:b Ringwood:tr:b 
-Ringwood Heatherdale:bl:b Ringwood-East:tr:b Heathmont:br:b 
-Ringwood-East Ringwood:bl:b Croydon:tr:b 
-Croydon Ringwood-East:bl:b Mooroolbark:tr:b 
-Mooroolbark Croydon:bl:b Lilydale:tr:b 
-Lilydale Mooroolbark:bl:b 
-Heathmont Ringwood:tl:b Bayswater:br:b 
-Bayswater Heathmont:tl:b Boronia:br:b 
-Boronia Bayswater:tl:b Ferntree-Gully:b:b 
-Ferntree-Gully Boronia:t:b Upper-Ferntree-Gully:br:b 
-Upper-Ferntree-Gully Ferntree-Gully:tl:b Upwey:br:b 
-Upwey Upper-Ferntree-Gully:tl:b Tecoma:br:b 
-Tecoma Upwey:tl:b Belgrave:r:b 
-Belgrave Tecoma:l:b 
-Riversdale Camberwell:tl:b Willison:b:b 
-Willison Riversdale:t:b Hartwell:b:b 
-Hartwell Willison:t:b Burwood:b:b 
-Burwood Hartwell:t:b Ashburton:b:b 
-Ashburton Burwood:t:b Alamein:b:b 
-Alamein Ashburton:t:b 
-Heyington Burnley:tl:b Kooyong:br:b 
-Kooyong Heyington:tl:b Tooronga:br:b 
-Tooronga Kooyong:tl:b Gardiner:br:b 
-Gardiner Tooronga:tl:b Glen-Iris:br:b 
-Glen-Iris Gardiner:tl:b Darling:b:b 
-Darling Glen-Iris:t:b East-Malvern:br:b 
-East-Malvern Darling:tl:b Holmesglen:r:b 
-Holmesglen East-Malvern:l:b Jordanville:r:b 
-Jordanville Holmesglen:l:b Mount-Waverley:r:b 
-Mount-Waverley Jordanville:l:b Syndal:r:b 
-Syndal Mount-Waverley:l:b Glen-Waverley:r:b 
-Glen-Waverley Syndal:l:b 
+Richmond time:9 Flinders-Street:tl:c,g,b,p,v East-Richmond:r:b South-Yarra:b:g,c,p,v 
+East-Richmond time:16 Richmond:l:b Burnley:r:b 
+Burnley time:12 East-Richmond:l:b Hawthorn:tr:b Heyington:br:b 
+Hawthorn time:14 Burnley:bl:b Glenferrie:r:b 
+Glenferrie time:16 Hawthorn:l:b Auburn:r:b 
+Auburn time:18 Glenferrie:l:b Camberwell:br:b 
+Camberwell time:20 Auburn:tl:b East-Camberwell:r:b Riversdale:br:b 
+East-Camberwell time:22 Camberwell:l:b Canterbury:r:b 
+Canterbury time:24 East-Camberwell:l:b Chatham:r:b 
+Chatham time:26 Canterbury:l:b Union:r:b 
+Union time:21 Chatham:l:b Box-Hill:tr:b 
+Box-Hill time:22 Union:bl:b Laburnum:r:b 
+Laburnum time:25 Box-Hill:l:b Blackburn:r:b 
+Blackburn time:27 Laburnum:l:b Nunawading:r:b 
+Nunawading time:30 Blackburn:l:b Mitcham:r:b 
+Mitcham time:33 Nunawading:l:b Heatherdale:r:b 
+Heatherdale time:35 Mitcham:l:b Ringwood:tr:b 
+Ringwood time:37 Heatherdale:bl:b Ringwood-East:tr:b Heathmont:br:b 
+Ringwood-East time:41 Ringwood:bl:b Croydon:tr:b 
+Croydon time:45 Ringwood-East:bl:b Mooroolbark:tr:b 
+Mooroolbark time:49 Croydon:bl:b Lilydale:tr:b 
+Lilydale time:54 Mooroolbark:bl:b 
+Heathmont time:41 Ringwood:tl:b Bayswater:br:b 
+Bayswater time:45 Heathmont:tl:b Boronia:br:b 
+Boronia time:48 Bayswater:tl:b Ferntree-Gully:b:b 
+Ferntree-Gully time:50 Boronia:t:b Upper-Ferntree-Gully:br:b 
+Upper-Ferntree-Gully time:53 Ferntree-Gully:tl:b Upwey:br:b 
+Upwey time:57 Upper-Ferntree-Gully:tl:b Tecoma:br:b 
+Tecoma time:59 Upwey:tl:b Belgrave:r:b 
+Belgrave time:61 Tecoma:l:b 
+Riversdale time:23 Camberwell:tl:b Willison:b:b 
+Willison time:25 Riversdale:t:b Hartwell:b:b 
+Hartwell time:27 Willison:t:b Burwood:b:b 
+Burwood time:29 Hartwell:t:b Ashburton:b:b 
+Ashburton time:31 Burwood:t:b Alamein:b:b 
+Alamein time:32 Ashburton:t:b 
+Heyington time:21 Burnley:tl:b Kooyong:br:b 
+Kooyong time:23 Heyington:tl:b Tooronga:br:b 
+Tooronga time:25 Kooyong:tl:b Gardiner:br:b 
+Gardiner time:27 Tooronga:tl:b Glen-Iris:br:b 
+Glen-Iris time:29 Gardiner:tl:b Darling:b:b 
+Darling time:31 Glen-Iris:t:b East-Malvern:br:b 
+East-Malvern time:33 Darling:tl:b Holmesglen:r:b 
+Holmesglen time:36 East-Malvern:l:b Jordanville:r:b 
+Jordanville time:38 Holmesglen:l:b Mount-Waverley:r:b 
+Mount-Waverley time:40 Jordanville:l:b Syndal:r:b 
+Syndal time:43 Mount-Waverley:l:b Glen-Waverley:r:b 
+Glen-Waverley time:45 Syndal:l:b 
 
 // South East
 South-Yarra Richmond:t:c,g,v,p Hawksburn:br:c,v,g Prahran:b:p 
