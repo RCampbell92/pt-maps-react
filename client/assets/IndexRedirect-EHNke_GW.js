@@ -1,0 +1,1 @@
+import{w as t,u as r,r as s,j as n}from"./chunk-PVWAREVJ-BBtH3yxJ.js";function o(){const e=r();return s.useEffect(()=>{(async()=>{e("/home")})()},[e]),n.jsx("div",{children:"Welcome"})}const i=t(o);export{i as default};

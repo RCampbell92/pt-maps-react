@@ -1,0 +1,1 @@
+import{w as o,j as t}from"./chunk-PVWAREVJ-BBtH3yxJ.js";import{S as s}from"./SubTitle-CEh91Lvc.js";const r=()=>t.jsx("div",{children:t.jsx(s,{children:"About this website"})}),n=o(r);export{n as default};
