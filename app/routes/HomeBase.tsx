@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router";
+import { HashRouter, Outlet } from "react-router";
 import Navbar from "~/components/Navbar";
 import Title from "~/components/Title";
 
@@ -10,7 +10,6 @@ const HomeBase = () => {
                 <Title />
                 <Navbar />
             </div>
-
             <Outlet />
         </div>
     );
