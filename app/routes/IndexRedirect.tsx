@@ -2,17 +2,17 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 
 function IndexRedirect() {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
-  useEffect(() => {
-    const redirect = async () => {
-      navigate("/home");
-    };
+    useEffect(() => {
+        const redirect = async () => {
+            navigate("/");
+        };
 
-    redirect();
-  }, [navigate]);
+        redirect();
+    }, [navigate]);
 
-  return <div>Welcome</div>;
+    return <div>Welcome</div>;
 }
 
 export default IndexRedirect;
