@@ -7,6 +7,6 @@ const devBase = "/";
 const deployBase = "/pt-maps-react";
 
 export default defineConfig({
-    plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+    plugins: [reactRouter(), tailwindcss(), tsconfigPaths()],
     base: devBase,
 });
