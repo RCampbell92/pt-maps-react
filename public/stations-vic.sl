@@ -6,16 +6,16 @@ Parliament time:5 Melbourne-Central:tl:b,r,c,y Flinders-Street:bl:r,b,y,c Jolimo
 Flinders-Street time:4 Parliament:tr:b,r,c,y Southern-Cross:tl:r,b,y,c,v,g Jolimont-MCG:r:r Richmond:br:c,b,g,v,p
 
 // Metro Tunnel
-Arden Footscray:bl Parkville:r 
-Parkville Arden:l State-Library:b  
-State-Library Parkville:t Town-Hall:b 
-Town-Hall State-Library:t Anzac:b 
-Anzac Town-Hall:t Hawksburn:r 
+Arden Footscray:bl:c Parkville:r:c 
+Parkville Arden:l:c State-Library:b:c  
+State-Library Parkville:t:c Town-Hall:b:c 
+Town-Hall State-Library:t:c Anzac:b:c 
+Anzac Town-Hall:t:c Hawksburn:r:c 
 
 // West
 North-Melbourne time:3 Southern-Cross:b:v,y,g South-Kensington:l:v,g,y Kensington:tl:y,v Macaulay:t:y Flagstaff:br:y
 South-Kensington time:6 Footscray:l:v,g,y North-Melbourne:r:v,y,g
-Footscray time:10 Seddon:bl:g Middle-Footscray:l:y,v South-Kensington:r:v,y,g Arden:tr 
+Footscray time:10 Seddon:bl:g Middle-Footscray:l:y,v South-Kensington:r:v,y,g Arden:tr:c 
 Seddon time:11 Yarraville:bl:g Footscray:tr:g
 Yarraville time:13 Spotswood:b:g Seddon:tr:g
 Spotswood time:15 Newport:b:g Yarraville:t:g
@@ -175,7 +175,7 @@ Glen-Waverley time:45 Syndal:l:b
 
 // South East
 South-Yarra Richmond:t:c,g,v,p Hawksburn:br:c,v,g Prahran:b:p 
-Hawksburn South-Yarra:tl:c,g,v Anzac:l Toorak:br:c,v,g
+Hawksburn South-Yarra:tl:c,g,v Anzac:l:c Toorak:br:c,v,g
 Toorak Hawksburn:tl:c,g,v Armadale:br:c,v,g
 Armadale Toorak:tl:c,g,v Malvern:br:c,v,g
 Malvern Armadale:tl:c,g,v Caulfield:br:c,v,g

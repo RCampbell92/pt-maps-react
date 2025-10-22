@@ -124,9 +124,7 @@ const Explore = () => {
                 <button
                     onClick={() => {
                         console.log(jumpStation);
-                        navigate(
-                            "/home/explore/" + jumpStation.replace(" ", "-")
-                        );
+                        navigate("/explore/" + jumpStation.replace(" ", "-"));
                     }}
                 >
                     Go
