@@ -91,10 +91,12 @@ const Explore = () => {
                 let fileStations: string[] = [];
                 // loop through all lines in file and get first word in every line
                 fileLines.forEach((line) => {
-                    let stationName = line.split(" ")[0].replace("-", " ");
-                    if (stationName.trim() != "//" && stationName.trim() != "")
+                    if (!line.trim().startsWith("//") && line.trim() != "") {
+                        let stationName = line.split(" ")[0].replace("-", " ");
                         fileStations.push(stationName);
+                    }
                 });
+                fileStations.sort();
                 // set stations array to fileLines array
                 setStations(fileStations);
             })
